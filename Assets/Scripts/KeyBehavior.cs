@@ -3,7 +3,24 @@ using UnityEngine;
 public class KeyBehavior : MonoBehaviour
 {
 
-    public AudioClip pickUpSFX;
+    [Header("Audio")]
+    [SerializeField]
+    private AudioClip pickUpSFX;
+    [SerializeField]
+    private AudioClip twinkle;
+
+    void Start()
+    {
+        InvokeRepeating("Twinkle", 0, 5f);
+    }
+
+    void Twinkle()
+    {
+        if (twinkle)
+        {
+            AudioSource.PlayClipAtPoint(twinkle, transform.position);
+        }
+    }
 
     void Update()
     {
@@ -26,7 +43,7 @@ public class KeyBehavior : MonoBehaviour
 
     void DestroyPickup()
     {
-        PlayAudio();
+        AudioSource.PlayClipAtPoint(pickUpSFX, Camera.main.transform.position);
         Destroy(gameObject);
     }
 

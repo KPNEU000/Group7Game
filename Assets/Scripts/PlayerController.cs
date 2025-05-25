@@ -11,10 +11,14 @@ public class PlayerController : MonoBehaviour
 
     public bool hasKey;
 
+    private AudioSource playerAudioSource;
+    public AudioClip genericWalkSFX;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        playerAudioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -32,10 +36,17 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalMovement = Input.GetAxis("Horizontal"); //Value between 1 (right) and -1 (left)
         float verticalMovement = Input.GetAxis("Vertical"); //Value between 1 (forward) and -1 (backward)
-    
+
         //Compute a movement vector
         Vector3 playerMovement = new Vector3(horizontalMovement, 0, verticalMovement).normalized; //Normalized used to get only the direction of the vector
         rb.AddForce(playerMovement * speed);
+
+        if (isGrounded && playerMovement != Vector3.zero)
+        {
+            playerAudioSource.pitch = Random.Range(-5, 5);
+            playerAudioSource.PlayOneShot(genericWalkSFX);
+        }
+
     }
 
     void Jump()

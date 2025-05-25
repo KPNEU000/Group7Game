@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class ClueBehavior : MonoBehaviour
 {
+    
     public bool collected;
+    [Header("Audio")]
+
+    [SerializeField]
+    private AudioClip clueCollected;
     void Update()
     {
         Rotate();
@@ -17,17 +22,8 @@ public class ClueBehavior : MonoBehaviour
     {
         if (other.CompareTag("Player")) //Put in inventory?
         {
-            gameObject.transform.parent = other.transform;
             collected = true;
-        }
-    }
-
-    void OnMouseDown()
-    {
-        if (collected)
-        {
-            //show flavor text?
-
+            AudioSource.PlayClipAtPoint(clueCollected, Camera.main.transform.position);
         }
     }
 }

@@ -37,6 +37,7 @@ public class KeyBehavior : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             DestroyPickup();
+            other.GetComponent<PlayerMovement>().UpdatePlayerAnim(1);
             other.GetComponent<PlayerController>().hasKey = true;
         }
     }

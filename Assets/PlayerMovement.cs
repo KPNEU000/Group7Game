@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -13,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     CharacterController controller;
 
     Animator animator;
+
+    bool grounded;
+    public float range = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,12 +26,14 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate() 
     {
+        CheckGrounded();
+        
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        Debug.Log(controller.isGrounded);
+        //Debug.Log(controller.isGrounded);
         //if (animator.GetInteger("animState") != 1)
         //{
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
@@ -73,8 +79,30 @@ public class PlayerMovement : MonoBehaviour
         //}
     }
 
+    private void CheckGrounded()
+    {
+        RaycastHit objectHitByRaycast;
+        if (Physics.Raycast(transform.position, Vector3.down, out objectHitByRaycast, range))
+        {
+            if (objectHitByRaycast.collider.CompareTag("Ground"))
+            {
+                grounded = true;
+            }
+            else
+            {
+                grounded = false;
+            }
+        }
+        Debug.Log(grounded);
+        if (!grounded)
+        {
+            UpdatePlayerAnim(5);
+        }
+    }
+
     public void UpdatePlayerAnim(int animState)
     {
         animator.SetInteger("animState", animState);
     }
+    
 }

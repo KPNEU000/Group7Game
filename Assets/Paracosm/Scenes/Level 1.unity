@@ -2418,7 +2418,7 @@ MonoBehaviour:
       Enabled: 0
       YOffset: 0
     Damping: 0.5
-    SmoothingTime: 0
+    SmoothingTime: 2
   TerrainResolution:
     Enabled: 1
     TerrainLayers:
@@ -2441,7 +2441,7 @@ MonoBehaviour:
   CollideAgainst:
     serializedVersion: 2
     m_Bits: 1
-  IgnoreTag: 
+  IgnoreTag: Player
   TransparentLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -54079,7 +54079,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -54107,7 +54107,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490868862}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1490868866
 Camera:
   m_ObjectHideFlags: 0
@@ -68111,6 +68111,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2329777274740910993, guid: e77d76eda990d754094a01553d298620, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329777274740910993, guid: e77d76eda990d754094a01553d298620, type: 3}
       propertyPath: airControl
       value: 1
       objectReference: {fileID: 0}
@@ -80691,7 +80695,7 @@ GameObject:
   - component: {fileID: 1806172317}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

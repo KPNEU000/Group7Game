@@ -24,6 +24,7 @@ public class ClueBehavior : MonoBehaviour
         {
             collected = true;
             AudioSource.PlayClipAtPoint(clueCollected, Camera.main.transform.position);
+            other.GetComponent<PlayerMovement>().UpdatePlayerAnim(1);
         }
     }
 }

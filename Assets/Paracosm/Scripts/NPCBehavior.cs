@@ -3,6 +3,7 @@ using UnityEngine;
 public class NPCBehavior : MonoBehaviour
 {
     public Transform target;
+    public GameObject cameraAnchor;
     public GameObject clue;
     public GameObject text1;
     public GameObject text2;
@@ -12,6 +13,10 @@ public class NPCBehavior : MonoBehaviour
         if (!target)
         {
             target = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+        if (!cameraAnchor)
+        {
+            cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
         }
     }
 
@@ -32,6 +37,8 @@ public class NPCBehavior : MonoBehaviour
             {
                 text1.SetActive(true);
             }
+
+            cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, false);
         }
     }
 
@@ -39,6 +46,8 @@ public class NPCBehavior : MonoBehaviour
     {
         text1.SetActive(false);
         text2.SetActive(false);
+
+        cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, true);
     }
 
     void LateUpdate() //Called after everything in the Update field 

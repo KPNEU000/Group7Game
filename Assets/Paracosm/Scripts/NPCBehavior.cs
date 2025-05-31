@@ -7,6 +7,16 @@ public class NPCBehavior : MonoBehaviour
     public GameObject clue;
     public GameObject text1;
     public GameObject text2;
+    public Transform head;
+
+    public float maximumX;
+    public float minimumX;
+
+    public float maximumY;
+    public float minimumY;
+
+    public float maximumZ;
+    public float minimumZ;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -52,8 +62,14 @@ public class NPCBehavior : MonoBehaviour
 
     void LateUpdate() //Called after everything in the Update field 
     {
-        if (target) {
-        transform.LookAt(target.position);
+        if (target && head)
+        {
+            head.LookAt(target.position);
+            head.transform.eulerAngles = new Vector3 (
+    Mathf.Clamp(head.transform.eulerAngles.x, minimumX, maximumX),
+    Mathf.Clamp(head.transform.eulerAngles.y, minimumY, maximumY),
+    Mathf.Clamp(head.transform.eulerAngles.z, minimumZ, maximumZ)
+);
         }
     }
 }

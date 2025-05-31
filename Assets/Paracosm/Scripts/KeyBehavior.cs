@@ -38,7 +38,7 @@ public class KeyBehavior : MonoBehaviour
         {
             DestroyPickup();
             other.GetComponent<PlayerMovement>().UpdatePlayerAnim(1);
-            other.GetComponent<PlayerController>().hasKey = true;
+            other.GetComponent<PlayerMovement>().hasKey = true;
         }
     }
 

@@ -82,7 +82,5 @@ public class PlayerController : MonoBehaviour
         }
         Debug.Log("Contact position: " + ground.point);
         Debug.Log("Contact normal: " + ground.normal); //1 if horizontal, 0 if vertical 
-
-    
     }
 }

@@ -5,9 +5,22 @@ public class ThirdPersonCamera : MonoBehaviour
 {
     //public Camera thirdPersonCamera;
     public GameObject firstPersonCamera;
+    public GameObject player;
+
+    void Update()
+    {
+        transform.position = player.transform.position;
+    }
     public void UpdateCameraPosition(GameObject player, GameObject NPC, bool isExiting)
     {
-        transform.position = Vector3.Lerp(player.transform.position, NPC.transform.position, 0.5f);
+        if (!isExiting)
+        {
+            transform.position = Vector3.Lerp(player.transform.position, NPC.transform.position, 0.5f);
+        }
+        else
+        {
+            transform.position = player.transform.position;
+        }
         firstPersonCamera.SetActive(isExiting);
     }
 }

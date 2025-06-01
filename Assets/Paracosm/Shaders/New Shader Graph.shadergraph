@@ -344,20 +344,6 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "2ea26a07303249ec9b0012210fb467d1"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "132f01428ab74d5cbcd6119c0bfff11c"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
                     "m_Id": "dde1ea71ad3047d8b5f4be0b8db8aebd"
                 },
                 "m_SlotId": 0
@@ -543,6 +529,20 @@
                     "m_Id": "2ea26a07303249ec9b0012210fb467d1"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "3894e6b4601e4c2cb0c4afae90158acc"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "2ea26a07303249ec9b0012210fb467d1"
+                },
+                "m_SlotId": 1
             }
         },
         {
@@ -1249,7 +1249,7 @@
     },
     "m_PreviewData": {
         "serializedMesh": {
-            "m_SerializedMesh": "{\"mesh\":{\"fileID\":10209,\"guid\":\"0000000000000000e000000000000000\",\"type\":0}}",
+            "m_SerializedMesh": "{\"mesh\":{\"fileID\":10210,\"guid\":\"0000000000000000e000000000000000\",\"type\":0}}",
             "m_Guid": ""
         },
         "preventRotation": false
@@ -1586,10 +1586,10 @@
     },
     "m_Color": {
         "color": {
-            "r": 0.005992542486637831,
-            "g": 0.39339935779571535,
-            "b": 0.6352200508117676,
-            "a": 0.0
+            "r": 0.41122815012931826,
+            "g": 0.7579827904701233,
+            "b": 0.9773584604263306,
+            "a": 1.0
         },
         "mode": 0
     }
@@ -1718,10 +1718,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2747.57080078125,
-            "y": -1028.006103515625,
-            "width": 151.3333740234375,
-            "height": 36.0
+            "x": -2711.2001953125,
+            "y": -972.0,
+            "width": 125.599853515625,
+            "height": 76.79998779296875
         }
     },
     "m_Slots": [
@@ -1879,10 +1879,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3162.904296875,
-            "y": -296.6727294921875,
-            "width": 209.3336181640625,
-            "height": 438.6666564941406
+            "x": -3163.999755859375,
+            "y": -300.79998779296877,
+            "width": 207.999755859375,
+            "height": 430.4000244140625
         }
     },
     "m_Slots": [
@@ -2189,7 +2189,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"10b658620d92155469577f88c2b1a490\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"19e1eaba2582f5545b52cfe574c2a0a9\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -2759,7 +2759,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "X",
     "m_StageCapability": 3,
-    "m_Value": 0.0,
+    "m_Value": 1.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
 }
@@ -2776,10 +2776,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2510.237548828125,
-            "y": -173.33929443359376,
-            "width": 209.33319091796876,
-            "height": 303.99981689453127
+            "x": -2416.800048828125,
+            "y": -16.80001449584961,
+            "width": 208.0,
+            "height": 301.60003662109377
         }
     },
     "m_Slots": [
@@ -3040,7 +3040,7 @@
     "m_Title": "Render Range Check",
     "m_Position": {
         "x": -3422.400390625,
-        "y": -1566.4002685546875
+        "y": -1566.4000244140625
     }
 }
 
@@ -3296,7 +3296,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "X",
     "m_StageCapability": 3,
-    "m_Value": 0.0,
+    "m_Value": 10.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
 }
@@ -3730,8 +3730,8 @@
     "m_ObjectId": "5b38b2941ae64161900aae59a7b08a71",
     "m_Title": "Colour",
     "m_Position": {
-        "x": -3336.7998046875,
-        "y": -842.4000244140625
+        "x": -3336.800048828125,
+        "y": -842.3998413085938
     }
 }
 
@@ -4068,10 +4068,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2762.23779296875,
-            "y": 173.32733154296876,
-            "width": 209.3336181640625,
-            "height": 327.9998779296875
+            "x": -2733.600341796875,
+            "y": 190.4000244140625,
+            "width": 208.0,
+            "height": 325.5999755859375
         }
     },
     "m_Slots": [
@@ -4209,7 +4209,7 @@
         "m_SerializableColors": []
     },
     "m_Value": {
-        "x": 0.0,
+        "x": 1.0299999713897706,
         "y": 0.0,
         "z": 10.0
     }
@@ -4303,7 +4303,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"10b658620d92155469577f88c2b1a490\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"c2f2a07333e813b4aab300de94362f2a\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -5662,10 +5662,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2738.23779296875,
-            "y": -1079.3394775390625,
-            "width": 146.0001220703125,
-            "height": 36.0
+            "x": -2791.2001953125,
+            "y": -1091.2000732421875,
+            "width": 125.599853515625,
+            "height": 76.800048828125
         }
     },
     "m_Slots": [
@@ -7246,7 +7246,7 @@
     "m_Title": "Normal (surface texture)",
     "m_Position": {
         "x": -4379.19970703125,
-        "y": -356.800048828125
+        "y": -360.8000793457031
     }
 }
 
@@ -7738,8 +7738,8 @@
     "m_ObjectId": "f07246b70e32405ea975acb6e093e2ec",
     "m_Title": "Wave displacement",
     "m_Position": {
-        "x": -5241.60009765625,
-        "y": -1121.60009765625
+        "x": -5241.6005859375,
+        "y": -1121.5999755859375
     }
 }
 

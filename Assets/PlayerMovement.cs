@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
@@ -8,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Controls")]
     public float speed = 10f;
-    public float jumpHeight = 0.5f;
+    //public float jumpHeight = 0.5f;
     public float gravity = 9.81f;
     public float airControl = 10f;
 
@@ -27,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     public float range = 1;
 
     [Header("Inventory")]
-    public bool hasKey = false;
+    public List<GameObject> keys;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,8 +42,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
-        Debug.Log(grounded);
+        //RaycastingEffect();
+        //Debug.Log(grounded);
 
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -68,19 +69,20 @@ public class PlayerMovement : MonoBehaviour
         input = transform.right * moveHorizontal + transform.forward * moveVertical;
         input.Normalize();
 
+
         if (controller.isGrounded)
         {
             moveDirection = input;
-            if (Input.GetButton("Jump"))
-            {
-                //UpdatePlayerAnim(2);
-                //grounded = false;
-                moveDirection.y = Mathf.Sqrt(2 * jumpHeight * gravity);
-            }
-            else
-            {
-                moveDirection.y = 0.0f; //reset
-            }
+            //if (Input.GetButton("Jump"))
+            //{
+            //UpdatePlayerAnim(2);
+            //grounded = false;
+            //    moveDirection.y = Mathf.Sqrt(2 * jumpHeight * gravity);
+            // }
+            //else
+            //{
+            moveDirection.y = 0.0f; //reset
+                                    // }
         }
         else //midair
         {
@@ -88,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
             moveDirection = Vector3.Lerp(moveDirection, input, airControl * Time.deltaTime);
             //UpdatePlayerAnim(5); //The isGrounded variable keeps flickering, so before that's fixed I'll just comment out these animations
         }
+
 
 
         controller.Move(input * speed * Time.deltaTime);
@@ -111,6 +114,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetInteger("animState", animState);
     }
     
+        
     /*
     void OnCollisionEnter(Collision collision)
     {

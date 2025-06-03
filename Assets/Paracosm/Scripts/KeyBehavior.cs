@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Video;
 
 public class KeyBehavior : MonoBehaviour
 {
@@ -36,16 +37,20 @@ public class KeyBehavior : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            DestroyPickup();
-            other.GetComponent<PlayerMovement>().UpdatePlayerAnim(1);
-            other.GetComponent<PlayerMovement>().hasKey = true;
+            
         }
     }
+
+    public void PickedUp()
+    {
+        DestroyPickup();
+    }
+
 
     void DestroyPickup()
     {
         AudioSource.PlayClipAtPoint(pickUpSFX, Camera.main.transform.position);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     void OnDestroy()

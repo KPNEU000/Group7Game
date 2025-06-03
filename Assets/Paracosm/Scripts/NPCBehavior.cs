@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class NPCBehavior : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class NPCBehavior : MonoBehaviour
         }
         if (!cameraAnchor)
         {
-            cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
+            //            cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
         }
     }
 
@@ -37,18 +38,22 @@ public class NPCBehavior : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetKey(KeyCode.E))
+        if (other.CompareTag("Player"))
         {
-            if (clue.GetComponent<ClueBehavior>().collected == true)
+            if (Input.GetKey(KeyCode.E))
             {
-                text2.SetActive(true);
-            }
-            else
-            {
-                text1.SetActive(true);
-            }
+                if (clue.GetComponent<ClueBehavior>().collected == true)
+                {
+                    text2.SetActive(true);
+                }
+                else
+                {
+                    text1.SetActive(true);
+                }
 
-            cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, false);
+                //            cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, false);
+            }
+            
         }
     }
 
@@ -57,7 +62,7 @@ public class NPCBehavior : MonoBehaviour
         text1.SetActive(false);
         text2.SetActive(false);
 
-        cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, true);
+//        cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, true);
     }
 
     void LateUpdate() //Called after everything in the Update field 
@@ -65,7 +70,7 @@ public class NPCBehavior : MonoBehaviour
         if (target && head)
         {
             head.LookAt(target.position);
-            head.transform.eulerAngles = new Vector3 (
+            head.transform.eulerAngles = new Vector3(
     Mathf.Clamp(head.transform.eulerAngles.x, minimumX, maximumX),
     Mathf.Clamp(head.transform.eulerAngles.y, minimumY, maximumY),
     Mathf.Clamp(head.transform.eulerAngles.z, minimumZ, maximumZ)

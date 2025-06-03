@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(CharacterController))]
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Inventory")]
     public List<GameObject> keys;
+    public List<GameObject> clues;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

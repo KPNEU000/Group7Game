@@ -49,7 +49,7 @@ public class GetKey : MonoBehaviour
                     objectHitByRaycast.transform.GetComponent<KeyBehavior>().PickedUp();
                     playerMovement.UpdatePlayerAnim(1);
                     playerMovement.keys.Add(objectHitByRaycast.transform.gameObject);
-                    keyInventory.text = keyInventory.text + "     " + objectHitByRaycast.transform.name;
+                    keyInventory.text = keyInventory.text + "\n" + objectHitByRaycast.transform.name;
                 }
             }
             if (objectHitByRaycast.collider.CompareTag("Clue"))
@@ -59,7 +59,7 @@ public class GetKey : MonoBehaviour
                     objectHitByRaycast.transform.GetComponent<ClueBehavior>().PickedUp();
                     playerMovement.UpdatePlayerAnim(1);
                     playerMovement.clues.Add(objectHitByRaycast.transform.gameObject);
-                    clueInventory.text = clueInventory.text + "     " + objectHitByRaycast.transform.name;
+                    clueInventory.text = clueInventory.text + "\n" + objectHitByRaycast.transform.name;
                 }
             }
         }

@@ -126,7 +126,7 @@ Material:
     - _textureScale: 47.07
     - _waveChoppiness: 20
     - _waveDensity: 1
-    - _waveHeight: 2.19
+    - _waveHeight: 0
     - _waveSpeed: 0.5
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

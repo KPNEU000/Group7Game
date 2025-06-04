@@ -64,4 +64,9 @@ public class GetKey : MonoBehaviour
             }
         }
     }
+
+    void OnDrawGizmos()
+    {
+        Debug.DrawRay(transform.position, transform.forward, Color.red);
+    }
 }

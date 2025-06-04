@@ -2,25 +2,56 @@ using UnityEngine;
 
 public class DoorBehavior : MonoBehaviour
 {
+    [Header("Animation")]
+    [SerializeField]
+    private bool open;
+    [SerializeField]
+    private Animator doorAnimator;
+
+    public GameObject correctKey;
+    public bool openable;
+
     [Header("Audio")]
     [SerializeField]
     private AudioClip doorLocked;
     [SerializeField]
     private AudioClip doorOpened;
+
+    void Start()
+    {
+        doorAnimator = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        if (open)
+        {
+            doorAnimator.enabled = true;
+        }
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (other.GetComponent<PlayerController>().hasKey)
+            Debug.Log("door");
+            foreach (GameObject key in other.GetComponent<PlayerMovement>().keys)
             {
-                gameObject.SetActive(false);
-                other.GetComponent<PlayerController>().hasKey = false;
-                AudioSource.PlayClipAtPoint(doorOpened, transform.position);
+                if (key == correctKey)
+                {
+                    openable = true;
+                }
             }
-            else
-            {
-                AudioSource.PlayClipAtPoint(doorLocked, transform.position);
-            }
+            if (openable)
+                {
+                    open = true;
+                    //other.GetComponent<PlayerMovement>().key = null;
+                    AudioSource.PlayClipAtPoint(doorOpened, transform.position);
+                }
+                else
+                {
+                    AudioSource.PlayClipAtPoint(doorLocked, transform.position);
+                }
         }
     }
+
 }

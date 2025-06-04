@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class NPCBehavior : MonoBehaviour
 {
@@ -7,6 +8,16 @@ public class NPCBehavior : MonoBehaviour
     public GameObject clue;
     public GameObject text1;
     public GameObject text2;
+    public Transform head;
+
+    public float maximumX;
+    public float minimumX;
+
+    public float maximumY;
+    public float minimumY;
+
+    public float maximumZ;
+    public float minimumZ;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,7 +27,7 @@ public class NPCBehavior : MonoBehaviour
         }
         if (!cameraAnchor)
         {
-            cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
+            //            cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
         }
     }
 
@@ -27,18 +38,22 @@ public class NPCBehavior : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetKey(KeyCode.E))
+        if (other.CompareTag("Player"))
         {
-            if (clue.GetComponent<ClueBehavior>().collected == true)
+            if (Input.GetKey(KeyCode.E))
             {
-                text2.SetActive(true);
-            }
-            else
-            {
-                text1.SetActive(true);
-            }
+                if (clue.GetComponent<ClueBehavior>().collected == true)
+                {
+                    text2.SetActive(true);
+                }
+                else
+                {
+                    text1.SetActive(true);
+                }
 
-            cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, false);
+                //            cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, false);
+            }
+            
         }
     }
 
@@ -47,13 +62,19 @@ public class NPCBehavior : MonoBehaviour
         text1.SetActive(false);
         text2.SetActive(false);
 
-        cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, true);
+//        cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, true);
     }
 
     void LateUpdate() //Called after everything in the Update field 
     {
-        if (target) {
-        transform.LookAt(target.position);
+        if (target && head)
+        {
+            head.LookAt(target.position);
+            head.transform.eulerAngles = new Vector3(
+    Mathf.Clamp(head.transform.eulerAngles.x, minimumX, maximumX),
+    Mathf.Clamp(head.transform.eulerAngles.y, minimumY, maximumY),
+    Mathf.Clamp(head.transform.eulerAngles.z, minimumZ, maximumZ)
+);
         }
     }
 }

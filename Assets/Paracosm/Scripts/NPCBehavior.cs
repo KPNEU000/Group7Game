@@ -45,7 +45,7 @@ public class NPCBehavior : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.T))
             {
                 if (clue.GetComponent<ClueBehavior>().collected == true)
                 {

@@ -9,13 +9,13 @@ public class ThirdPersonCamera : MonoBehaviour
 
     void Update()
     {
-        transform.position = player.transform.position;
+        //transform.position = player.transform.position;
     }
     public void UpdateCameraPosition(GameObject player, GameObject NPC, bool isExiting)
     {
         if (!isExiting)
         {
-            transform.position = Vector3.Lerp(player.transform.position, NPC.transform.position, 0.5f);
+            transform.position = (player.transform.position + NPC.transform.position)/2 ;
         }
         else
         {

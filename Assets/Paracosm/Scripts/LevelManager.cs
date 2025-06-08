@@ -67,7 +67,7 @@ public class LevelManager : MonoBehaviour
         Invoke("ReloadSameScene", 5);
     }
 
-    void LevelLost() {
+    public void LevelLost() {
         IsPlaying = false;
         DisplayGameMessage("You Failed to Find the Clue");
         

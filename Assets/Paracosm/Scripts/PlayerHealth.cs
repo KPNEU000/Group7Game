@@ -106,6 +106,8 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Player died.");
 
         transform.Rotate(-90, 0, 0, Space.Self);
+        LevelManager levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+        levelManager.LevelLost();
     }
 
     void UpdateHealthSlider()

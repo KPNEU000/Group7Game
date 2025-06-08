@@ -31,6 +31,8 @@ public class ClueBehavior : MonoBehaviour
 
     public void PickedUp()
     {
+        LevelManager levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+        levelManager.ItemCollected(gameObject.name);
         collected = true;
         AudioSource.PlayClipAtPoint(clueCollected, Camera.main.transform.position);
         gameObject.SetActive(false);

@@ -9,6 +9,7 @@ TagManager:
   - Door
   - NPC
   - Clue
+  - LevelManager
   layers:
   - Default
   - TransparentFX

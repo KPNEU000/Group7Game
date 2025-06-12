@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Controls")]
     public float speed = 10f;
-    //public float jumpHeight = 0.5f;
+    public float jumpHeight = 0.5f;
     public float gravity = 9.81f;
     public float airControl = 10f;
 
@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
+    /*
     void FixedUpdate()
     {
         //RaycastingEffect();
@@ -75,16 +76,16 @@ public class PlayerMovement : MonoBehaviour
         if (controller.isGrounded)
         {
             moveDirection = input;
-            //if (Input.GetButton("Jump"))
-            //{
+            if (Input.GetButton("Jump"))
+            {
             //UpdatePlayerAnim(2);
             //grounded = false;
-            //    moveDirection.y = Mathf.Sqrt(2 * jumpHeight * gravity);
-            // }
-            //else
-            //{
+               moveDirection.y = Mathf.Sqrt(2 * jumpHeight * gravity);
+            }
+            else
+            {
             moveDirection.y = 0.0f; //reset
-                                    // }
+            }
         }
         else //midair
         {
@@ -99,6 +100,39 @@ public class PlayerMovement : MonoBehaviour
 
 
         //}
+    }
+    */
+
+    void Update()
+    {
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+
+        input = transform.right * moveHorizontal + transform.forward * moveVertical;
+        input.Normalize();
+
+        Debug.Log(controller.isGrounded);
+        if (controller.isGrounded)
+        {
+            moveDirection = input;
+            if (Input.GetButton("Jump"))
+            {
+                moveDirection.y = Mathf.Sqrt(2 * jumpHeight * gravity);
+            }
+            else
+            {
+                moveDirection.y = 0.0f; //reset
+            }
+            Debug.Log(moveDirection.y);
+        }
+        //else //midair
+        {
+            input.y = moveDirection.y;
+            moveDirection = Vector3.Lerp(moveDirection, input, airControl * Time.deltaTime);
+        }
+
+        moveDirection.y -= gravity * Time.deltaTime; //Apply gravity constantly
+        controller.Move(input * speed * Time.deltaTime);
     }
 
     public void PlayWalkSound()

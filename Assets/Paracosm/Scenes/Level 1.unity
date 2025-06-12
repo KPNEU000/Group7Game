@@ -14285,7 +14285,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.1
   m_Height: 0.1
@@ -14308,12 +14308,12 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.04, z: 0}
 --- !u!54 &143085764
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30550,23 +30550,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 228839175094743653, guid: 1192f8ea43fcc2746be314c79250f1b3, type: 3}
   m_PrefabInstance: {fileID: 244116188}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &249925814 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100068, guid: a55b75e1bbafd1241b488997bb65464c, type: 3}
-  m_PrefabInstance: {fileID: 1099961557}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &249925816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249925814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f860de4c6ed6b94fa440aa9a2344608, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &249925817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400068, guid: a55b75e1bbafd1241b488997bb65464c, type: 3}
@@ -133792,7 +133775,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.28, y: -13.14, z: 0.47}
+  m_Size: {x: 8.28, y: 13.14, z: 0.47}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &620454869
 PrefabInstance:
@@ -168195,9 +168178,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100094, guid: a55b75e1bbafd1241b488997bb65464c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 806218157}
-    - targetCorrespondingSourceObject: {fileID: 100068, guid: a55b75e1bbafd1241b488997bb65464c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 249925816}
   m_SourcePrefab: {fileID: 100100000, guid: a55b75e1bbafd1241b488997bb65464c, type: 3}
 --- !u!1001 &1105634565
 PrefabInstance:
@@ -183429,7 +183409,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.28, y: -13.14, z: 0.47}
+  m_Size: {x: 8.28, y: 13.14, z: 0.47}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1627658580 stripped
 Transform:
@@ -195841,7 +195821,7 @@ GameObject:
   - component: {fileID: 1749307268}
   m_Layer: 0
   m_Name: Water
-  m_TagString: Untagged
+  m_TagString: Deadly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241905,6 +241885,10 @@ PrefabInstance:
     - target: {fileID: 1602012194469288464, guid: 7a6674745c357e045ab45832e4282828, type: 3}
       propertyPath: hasKey
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602012194469288464, guid: 7a6674745c357e045ab45832e4282828, type: 3}
+      propertyPath: jumpHeight
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3913106739306474339, guid: 7a6674745c357e045ab45832e4282828, type: 3}
       propertyPath: m_LocalPosition.x

@@ -10,6 +10,7 @@ TagManager:
   - NPC
   - Clue
   - LevelManager
+  - Deadly
   layers:
   - Default
   - TransparentFX

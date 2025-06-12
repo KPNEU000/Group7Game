@@ -24,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
 
     void FixedUpdate()
     {
-          Debug.Log("Player is grounded: " + isGrounded);
+        //Debug.Log("Player is grounded: " + isGrounded);
 
         // So long as the player is grounded, previousPosition will keep updating
         if (isGrounded)
@@ -51,6 +51,10 @@ public class PlayerHealth : MonoBehaviour
             isGrounded = true;
             lastFallDistance = fallDistance;
 
+        }
+        else if (collision.gameObject.CompareTag("Deadly")) //Die when you hit the water
+        {
+            Die();
         }
     }
 

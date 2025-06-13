@@ -58,7 +58,8 @@ public class GetKey : MonoBehaviour
                 {
                     objectHitByRaycast.transform.GetComponent<ClueBehavior>().PickedUp();
                     playerMovement.UpdatePlayerAnim(1);
-                    playerMovement.clues.Add(objectHitByRaycast.transform.gameObject);
+                    PlayerMovement.clues.Add(objectHitByRaycast.transform.gameObject);
+                    PlayerMovement.cluesCollected++;
                     clueInventory.text = clueInventory.text + "\n" + objectHitByRaycast.transform.name;
                 }
             }

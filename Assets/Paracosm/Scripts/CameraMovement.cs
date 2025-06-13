@@ -3,7 +3,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
 
-    public float mouseSensitivity = 100f;
+    public static float mouseSensitivity = 100f;
     public float pitchMin = -90;
     public float pitchMax = 90;
     public Transform playerBody;
@@ -15,6 +15,7 @@ public class CameraMovement : MonoBehaviour
         playerBody = transform.parent.transform; //the playerbody is the parent of the camera
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     // Update is called once per frame
@@ -38,7 +39,7 @@ public class CameraMovement : MonoBehaviour
         //Roll
         //roll = moveZ;
         //transform.localRotation = Quaternion.Euler(0, 0, roll);
-        
+        Debug.Log("MOUSE SENSITIVITY" + mouseSensitivity);
     }
     
 }

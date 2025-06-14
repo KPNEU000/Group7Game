@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.UI;
+using TMPro;
 
 public class NPCBehavior : MonoBehaviour
 {
@@ -23,6 +25,13 @@ public class NPCBehavior : MonoBehaviour
     public Quaternion maxQuaternion = new Quaternion(0.34818f, 0.21019f, -0.08042f, 0.91001f);
 
     public GameObject thirdPersonCamera;
+
+    [Header("Dialogue")]
+    public bool dialogueEnabled;
+    public GameObject dialogueCanvas;
+    public GameObject gameUI;
+    public GameObject dialogueCamera;
+    public TMP_Text dialogueText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,16 +56,26 @@ public class NPCBehavior : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.T))
             {
-                if (clue.GetComponent<ClueBehavior>().collected == true)
+                if (dialogueEnabled)
                 {
-                    text2.SetActive(true);
+                    dialogueCamera.SetActive(true);
+                    dialogueText.gameObject.SetActive(true);
+                    dialogueCanvas.gameObject.SetActive(true);
+                    gameUI.SetActive(false);
                 }
                 else
                 {
-                    text1.SetActive(true);
-                }
+                    if (clue.GetComponent<ClueBehavior>().collected == true)
+                    {
+                        text2.SetActive(true);
+                    }
+                    else
+                    {
+                        text1.SetActive(true);
+                    }
 
-                cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, false);
+                    cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, false);
+                }
             }
             
         }
@@ -68,6 +87,12 @@ public class NPCBehavior : MonoBehaviour
         text2.SetActive(false);
 
         cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, true);
+        if (dialogueEnabled)
+        {
+            dialogueCamera.SetActive(false);
+            dialogueCanvas.SetActive(false);
+            gameUI.SetActive(false);
+        }
     }
 
     void LateUpdate() //Called after everything in the Update field 

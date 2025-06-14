@@ -74,4 +74,10 @@ public class MenuManager : MonoBehaviour
     {
         clueDisplay.GetComponent<TextMeshProUGUI>().text = PlayerMovement.cluesCollected.ToString() + "/" + PlayerMovement.clues.Count.ToString();
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Application.OpenURL("about:blank");
+    }
 }

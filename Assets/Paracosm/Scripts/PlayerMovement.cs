@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Inventory")]
     public List<GameObject> keys;
     public static List<GameObject> clues;
-    public static int cluesCollected;
+    public static int cluesCollected = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -398,8 +398,8 @@ ModelImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 29559
-  packageName: Sci-Fi Soldier
-  packageVersion: 1.2
-  assetPath: Assets/Yurowm/YurowmAvatar.FBX
-  uploadId: 62369
+  productId: 35921
+  packageName: Sci-Fi Cyborg Girl
+  packageVersion: 1.0
+  assetPath: Assets/Packages/Characters/Yurowm/YurowmAvatar.FBX
+  uploadId: 62116

@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class GetKey : MonoBehaviour
+public class GetKey : MonoBehaviour //Should really be renamed GetCollectable or CameraRaycasting
 {
 
     public float range = 10;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraMovement : MonoBehaviour
+public class CameraMovement : MonoBehaviour //Should really be renamed Camera Behavior
 {
 
     public static float mouseSensitivity = 100f;
@@ -15,7 +15,7 @@ public class CameraMovement : MonoBehaviour
         playerBody = transform.parent.transform; //the playerbody is the parent of the camera
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        
+
     }
 
     // Update is called once per frame
@@ -40,6 +40,11 @@ public class CameraMovement : MonoBehaviour
         //roll = moveZ;
         //transform.localRotation = Quaternion.Euler(0, 0, roll);
         Debug.Log("MOUSE SENSITIVITY" + mouseSensitivity);
+    }
+
+    public void PlayClickSound(AudioClip clickSFX)
+    {
+        AudioSource.PlayClipAtPoint(clickSFX, transform.position);
     }
     
 }

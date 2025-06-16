@@ -8,6 +8,12 @@ public class ClueBehavior : MonoBehaviour
 
     [SerializeField]
     private AudioClip clueCollected;
+    LevelManager levelManager;
+
+    void Start()
+    {
+        levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+    }
     void Update()
     {
         Rotate();
@@ -31,7 +37,6 @@ public class ClueBehavior : MonoBehaviour
 
     public void PickedUp()
     {
-        LevelManager levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
         levelManager.ItemCollected(gameObject.name);
         collected = true;
         AudioSource.PlayClipAtPoint(clueCollected, Camera.main.transform.position);

@@ -25,6 +25,7 @@ public class NPCBehavior : MonoBehaviour
     public Quaternion maxQuaternion = new Quaternion(0.34818f, 0.21019f, -0.08042f, 0.91001f);
 
     public GameObject thirdPersonCamera;
+    public ThirdPersonCamera thirdPersonCameraAnchor;
 
     [Header("Dialogue")]
     public bool dialogueEnabled;
@@ -43,13 +44,9 @@ public class NPCBehavior : MonoBehaviour
         {
             cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
         }
+        thirdPersonCameraAnchor = cameraAnchor.GetComponent<ThirdPersonCamera>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -74,7 +71,7 @@ public class NPCBehavior : MonoBehaviour
                         text1.SetActive(true);
                     }
 
-                    cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, false);
+                    thirdPersonCameraAnchor.UpdateCameraPosition(target.gameObject, gameObject, false);
                 }
             }
             
@@ -86,7 +83,7 @@ public class NPCBehavior : MonoBehaviour
         text1.SetActive(false);
         text2.SetActive(false);
 
-        cameraAnchor.GetComponent<ThirdPersonCamera>().UpdateCameraPosition(target.gameObject, gameObject, true);
+        thirdPersonCameraAnchor.UpdateCameraPosition(target.gameObject, gameObject, true);
         if (dialogueEnabled)
         {
             dialogueCamera.SetActive(false);

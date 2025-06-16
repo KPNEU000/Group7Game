@@ -14,12 +14,15 @@ public class PlayerHealth : MonoBehaviour
     private float fallDistance;
     private float lastFallDistance;
     private bool isGrounded;
+
+    public LevelManager levelManager;
     void Start()
     {
         isGrounded = true;
-        
+
         currentHealth = startingHealth;
 
+        levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
     }
 
     void FixedUpdate()
@@ -110,7 +113,6 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Player died.");
 
         transform.Rotate(-90, 0, 0, Space.Self);
-        LevelManager levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
         levelManager.LevelLost();
     }
 

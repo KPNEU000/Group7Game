@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.AI;
 
 public class NPCBehavior : MonoBehaviour
 {
@@ -39,7 +40,8 @@ public class NPCBehavior : MonoBehaviour
 
     [Header("FSM")]
     public NPCState currentState = NPCState.Idle;
-    public bool walking = false;
+    public bool walkable = false;
+    public NavMeshAgent agent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -53,6 +55,12 @@ public class NPCBehavior : MonoBehaviour
             cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
         }
         thirdPersonCameraAnchor = cameraAnchor.GetComponent<ThirdPersonCamera>();
+        if (walkable) {
+            agent.SetDestination(target.position);
+            if (!agent) {
+                walkable = false;
+            }
+        }
     }
 
     void Update() {
@@ -73,17 +81,29 @@ public class NPCBehavior : MonoBehaviour
         if (text3) {
             text3.SetActive(false);
         }
+        if (walkable && agent.enabled) {
+            agent.enabled = false;
+        }
     }
 
     void Notice() {
         if (text3) {
             text3.SetActive(true);
         }
+        if (walkable && !agent.enabled) {
+            agent.enabled = true;
+        }
+        if (walkable) {
+            agent.SetDestination(GameObject.FindGameObjectWithTag("Player").transform.position);
+        }
     }
 
     void Talk() {
         if (text3) {
             text3.SetActive(false);
+        }
+        if (walkable && agent.enabled) {
+            agent.enabled = false;
         }
     }
 

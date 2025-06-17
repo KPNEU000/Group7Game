@@ -140,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (controller.isGrounded && input != Vector3.zero)
         {
-            playerAudioSource.pitch = UnityEngine.Random.Range(-5, 5);
+            playerAudioSource.pitch = UnityEngine.Random.Range(0, 5);
             playerAudioSource.PlayOneShot(genericWalkSFX);
         }
     }

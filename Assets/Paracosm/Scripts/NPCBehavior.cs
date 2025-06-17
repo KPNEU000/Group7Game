@@ -10,6 +10,7 @@ public class NPCBehavior : MonoBehaviour
     public GameObject clue;
     public GameObject text1;
     public GameObject text2;
+    public GameObject text3;
     public Transform head;
 
     public float maximumX;
@@ -27,12 +28,19 @@ public class NPCBehavior : MonoBehaviour
     public GameObject thirdPersonCamera;
     public ThirdPersonCamera thirdPersonCameraAnchor;
 
+    public enum NPCState {Idle, Notice, Talk}
+
     [Header("Dialogue")]
     public bool dialogueEnabled;
     public GameObject dialogueCanvas;
     public GameObject gameUI;
     public GameObject dialogueCamera;
     public TMP_Text dialogueText;
+
+    [Header("FSM")]
+    public NPCState currentState = NPCState.Idle;
+    public bool walking = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,12 +55,49 @@ public class NPCBehavior : MonoBehaviour
         thirdPersonCameraAnchor = cameraAnchor.GetComponent<ThirdPersonCamera>();
     }
 
+    void Update() {
+        switch (currentState) {
+            case NPCState.Idle:
+                Idle();
+                break;
+            case NPCState.Notice:
+                Notice();
+                break;
+            case NPCState.Talk:
+                Talk();
+                break;
+        }
+    }
+
+    void Idle() {
+        if (text3) {
+            text3.SetActive(false);
+        }
+    }
+
+    void Notice() {
+        if (text3) {
+            text3.SetActive(true);
+        }
+    }
+
+    void Talk() {
+        if (text3) {
+            text3.SetActive(false);
+        }
+    }
+
     void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            if (currentState == NPCState.Idle) {
+                currentState = NPCState.Notice;
+            }
+
             if (Input.GetKey(KeyCode.T))
             {
+                currentState = NPCState.Talk;
                 if (dialogueEnabled)
                 {
                     dialogueCamera.SetActive(true);
@@ -80,6 +125,7 @@ public class NPCBehavior : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        currentState = NPCState.Idle;
         text1.SetActive(false);
         text2.SetActive(false);
 

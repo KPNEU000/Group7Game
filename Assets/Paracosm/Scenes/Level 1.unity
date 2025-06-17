@@ -7475,6 +7475,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 739014745}
     m_Modifications:
+    - target: {fileID: 706666682293761221, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 706666682293761221, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706666682293761221, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 706666682293761221, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706666682293761221, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 706666682293761221, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 706666682293761221, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 750019898690102279, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -58.85812
@@ -7521,6 +7549,10 @@ PrefabInstance:
       objectReference: {fileID: 1508990430}
     - target: {fileID: 1247542052405181171, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1852656098234185098, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
@@ -7648,7 +7680,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1852656098234185098, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 748530233}
+    - targetCorrespondingSourceObject: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+--- !u!1 &29320601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+  m_PrefabInstance: {fileID: 29320600}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &29809682 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2202935946969368902, guid: 89c98ddaef6319140ab657a1a44df787, type: 3}
@@ -32670,6 +32710,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8032831991337165120, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 863934401}
+    - targetCorrespondingSourceObject: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
 --- !u!1001 &409149809
 PrefabInstance:
@@ -144658,6 +144701,7 @@ MonoBehaviour:
   clue: {fileID: 1728298803}
   text1: {fileID: 504418791}
   text2: {fileID: 551738839}
+  text3: {fileID: 0}
   head: {fileID: 697564665}
   maximumX: 360
   minimumX: 0
@@ -144674,6 +144718,8 @@ MonoBehaviour:
   gameUI: {fileID: 0}
   dialogueCamera: {fileID: 0}
   dialogueText: {fileID: 0}
+  currentState: 0
+  walking: 0
 --- !u!65 &697564667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -148691,6 +148737,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1852656098234185098, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2083031927}
+    - targetCorrespondingSourceObject: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
 --- !u!1 &777115584
 GameObject:
@@ -160631,6 +160680,7 @@ MonoBehaviour:
   clue: {fileID: 400503684}
   text1: {fileID: 1628444091}
   text2: {fileID: 578197815}
+  text3: {fileID: 0}
   head: {fileID: 0}
   maximumX: 10
   minimumX: -24
@@ -160647,6 +160697,8 @@ MonoBehaviour:
   gameUI: {fileID: 0}
   dialogueCamera: {fileID: 0}
   dialogueText: {fileID: 0}
+  currentState: 0
+  walking: 0
 --- !u!65 &798596300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -160985,6 +161037,7 @@ MonoBehaviour:
   clue: {fileID: 1353146099}
   text1: {fileID: 682597146}
   text2: {fileID: 1772247065}
+  text3: {fileID: 0}
   head: {fileID: 249925817}
   maximumX: 0
   minimumX: 0
@@ -161001,6 +161054,8 @@ MonoBehaviour:
   gameUI: {fileID: 0}
   dialogueCamera: {fileID: 0}
   dialogueText: {fileID: 0}
+  currentState: 0
+  walking: 0
 --- !u!65 &806218156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -163258,6 +163313,7 @@ MonoBehaviour:
   clue: {fileID: 934965593}
   text1: {fileID: 805841273}
   text2: {fileID: 1063711999}
+  text3: {fileID: 0}
   head: {fileID: 0}
   maximumX: 0
   minimumX: 0
@@ -163274,6 +163330,8 @@ MonoBehaviour:
   gameUI: {fileID: 0}
   dialogueCamera: {fileID: 0}
   dialogueText: {fileID: 0}
+  currentState: 0
+  walking: 0
 --- !u!65 &869326835
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -178988,6 +179046,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1852656098234185098, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 551738843}
+    - targetCorrespondingSourceObject: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
 --- !u!1 &1153364059
 GameObject:
@@ -186266,6 +186327,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1852656098234185098, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1772247069}
+    - targetCorrespondingSourceObject: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
 --- !u!1 &1304221503
 GameObject:
@@ -193578,6 +193642,7 @@ MonoBehaviour:
   clue: {fileID: 29809682}
   text1: {fileID: 1395046203}
   text2: {fileID: 91659166}
+  text3: {fileID: 0}
   head: {fileID: 360728105}
   maximumX: 0
   minimumX: 0
@@ -193594,6 +193659,8 @@ MonoBehaviour:
   gameUI: {fileID: 0}
   dialogueCamera: {fileID: 0}
   dialogueText: {fileID: 0}
+  currentState: 0
+  walking: 0
 --- !u!65 &1460760450
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -194829,6 +194896,7 @@ MonoBehaviour:
   clue: {fileID: 707237539}
   text1: {fileID: 447202836}
   text2: {fileID: 748530229}
+  text3: {fileID: 29320601}
   head: {fileID: 1508990430}
   maximumX: 360
   minimumX: 0
@@ -194845,6 +194913,8 @@ MonoBehaviour:
   gameUI: {fileID: 0}
   dialogueCamera: {fileID: 0}
   dialogueText: {fileID: 0}
+  currentState: 0
+  walking: 0
 --- !u!65 &1508990432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -196220,6 +196290,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1852656098234185098, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 631531171}
+    - targetCorrespondingSourceObject: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
 --- !u!1001 &1520734764
 PrefabInstance:
@@ -196811,6 +196884,7 @@ MonoBehaviour:
   clue: {fileID: 500437566}
   text1: {fileID: 1790659364}
   text2: {fileID: 2083031923}
+  text3: {fileID: 0}
   head: {fileID: 0}
   maximumX: 0
   minimumX: 0
@@ -196827,6 +196901,8 @@ MonoBehaviour:
   gameUI: {fileID: 0}
   dialogueCamera: {fileID: 0}
   dialogueText: {fileID: 0}
+  currentState: 0
+  walking: 0
 --- !u!65 &1543725630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -203433,6 +203509,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1852656098234185098, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 578197819}
+    - targetCorrespondingSourceObject: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
 --- !u!1 &1660522464
 GameObject:
@@ -232382,6 +232461,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1852656098234185098, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1063712003}
+    - targetCorrespondingSourceObject: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
 --- !u!1 &1925078907
 GameObject:
@@ -234565,6 +234647,7 @@ MonoBehaviour:
   clue: {fileID: 1740030173}
   text1: {fileID: 762163160}
   text2: {fileID: 631531167}
+  text3: {fileID: 0}
   head: {fileID: 0}
   maximumX: 30
   minimumX: -80
@@ -234581,6 +234664,8 @@ MonoBehaviour:
   gameUI: {fileID: 0}
   dialogueCamera: {fileID: 0}
   dialogueText: {fileID: 0}
+  currentState: 0
+  walking: 0
 --- !u!65 &1980139534
 BoxCollider:
   m_ObjectHideFlags: 0

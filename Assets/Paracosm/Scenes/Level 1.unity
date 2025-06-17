@@ -32907,6 +32907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LongingSphere
       objectReference: {fileID: 0}
+    - target: {fileID: 8854853465382013008, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9198667422921282174, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_text
       value: 'Sometimes I wish I could swim away from here... '
@@ -144993,6 +144997,7 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   currentState: 0
   walkable: 0
+  detectionRange: 20
   agent: {fileID: 0}
 --- !u!65 &697564667
 BoxCollider:
@@ -148808,6 +148813,10 @@ PrefabInstance:
     - target: {fileID: 8445732776569706837, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_Name
       value: Skygazing Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854853465382013008, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9198667422921282174, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_text
@@ -160496,6 +160505,7 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   currentState: 0
   walkable: 0
+  detectionRange: 20
   agent: {fileID: 0}
 --- !u!65 &798596300
 BoxCollider:
@@ -160854,6 +160864,7 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   currentState: 0
   walkable: 0
+  detectionRange: 20
   agent: {fileID: 0}
 --- !u!65 &806218156
 BoxCollider:
@@ -163296,6 +163307,7 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   currentState: 0
   walkable: 0
+  detectionRange: 20
   agent: {fileID: 0}
 --- !u!65 &869326835
 BoxCollider:
@@ -179646,6 +179658,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8854853465382013008, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9198667422921282174, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_text
       value: 'Authorization NOT detected
@@ -186817,6 +186833,10 @@ PrefabInstance:
     - target: {fileID: 8445732776569706837, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_Name
       value: SoldierwithFinger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854853465382013008, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9198667422921282174, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_text
@@ -194199,6 +194219,7 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   currentState: 0
   walkable: 0
+  detectionRange: 20
   agent: {fileID: 0}
 --- !u!65 &1460760450
 BoxCollider:
@@ -195454,6 +195475,7 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   currentState: 0
   walkable: 1
+  detectionRange: 20
   agent: {fileID: 523885879}
 --- !u!65 &1508990432
 BoxCollider:
@@ -196792,6 +196814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasketballDemon
       objectReference: {fileID: 0}
+    - target: {fileID: 8854853465382013008, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9198667422921282174, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_text
       value: 'Whenever I forget something I like to calm myself down with a nice
@@ -197440,6 +197466,7 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   currentState: 0
   walkable: 0
+  detectionRange: 20
   agent: {fileID: 0}
 --- !u!65 &1543725630
 BoxCollider:
@@ -203904,6 +203931,10 @@ PrefabInstance:
     - target: {fileID: 8445732776569706837, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_Name
       value: Sitting Cyborg
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854853465382013008, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9198667422921282174, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_text
@@ -232686,6 +232717,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LyingSoldier
       objectReference: {fileID: 0}
+    - target: {fileID: 8854853465382013008, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9198667422921282174, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_text
       value: Did they have sunrises like these in your hometown? I wonder
@@ -234932,6 +234967,7 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   currentState: 0
   walkable: 0
+  detectionRange: 20
   agent: {fileID: 0}
 --- !u!65 &1980139534
 BoxCollider:

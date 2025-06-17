@@ -41,6 +41,7 @@ public class NPCBehavior : MonoBehaviour
     [Header("FSM")]
     public NPCState currentState = NPCState.Idle;
     public bool walkable = false;
+    public float detectionRange = 20f;
     public NavMeshAgent agent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -59,6 +60,10 @@ public class NPCBehavior : MonoBehaviour
             agent.SetDestination(target.position);
             if (!agent) {
                 walkable = false;
+            }
+        } else {
+            if (agent) {
+                agent.enabled = false;
             }
         }
     }
@@ -84,6 +89,8 @@ public class NPCBehavior : MonoBehaviour
         if (walkable && agent.enabled) {
             agent.enabled = false;
         }
+
+        LookForPlayer();
     }
 
     void Notice() {
@@ -95,6 +102,10 @@ public class NPCBehavior : MonoBehaviour
         }
         if (walkable) {
             agent.SetDestination(GameObject.FindGameObjectWithTag("Player").transform.position);
+        }
+
+        if (Vector3.Distance(transform.position, target.position) > detectionRange) {
+            currentState = NPCState.Idle;
         }
     }
 
@@ -111,10 +122,6 @@ public class NPCBehavior : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (currentState == NPCState.Idle) {
-                currentState = NPCState.Notice;
-            }
-
             if (Input.GetKey(KeyCode.T))
             {
                 currentState = NPCState.Talk;
@@ -156,6 +163,26 @@ public class NPCBehavior : MonoBehaviour
             dialogueCanvas.SetActive(false);
             gameUI.SetActive(false);
         }
+    }
+
+    void LookForPlayer() {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, detectionRange);
+        Transform player = null;
+
+        foreach (Collider collider in colliders) {
+            if (collider.CompareTag("Player")) {
+                player = collider.transform;
+            }
+        }
+        
+        if (player) {
+            currentState = NPCState.Notice;
+        }
+    }
+
+    void OnDrawGizmosSelected() {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 
     void LateUpdate() //Called after everything in the Update field 

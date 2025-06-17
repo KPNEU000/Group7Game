@@ -100,7 +100,7 @@ public class NPCBehavior : MonoBehaviour
         if (walkable && !agent.enabled) {
             agent.enabled = true;
         }
-        if (walkable) {
+        if (walkable && HasLineOfSight()) {
             agent.SetDestination(GameObject.FindGameObjectWithTag("Player").transform.position);
         }
 
@@ -175,9 +175,22 @@ public class NPCBehavior : MonoBehaviour
             }
         }
         
-        if (player) {
+        if (player && HasLineOfSight()) {
             currentState = NPCState.Notice;
         }
+    }
+
+    bool HasLineOfSight() {
+        RaycastHit hit;
+        Vector3 direction = (target.position - transform.position).normalized;
+
+        if (Physics.Raycast(transform.position, direction, out hit, detectionRange)) {
+            if (hit.collider.CompareTag("Player")) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     void OnDrawGizmosSelected() {

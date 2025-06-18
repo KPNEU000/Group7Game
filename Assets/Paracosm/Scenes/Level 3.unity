@@ -26938,6 +26938,10 @@ PrefabInstance:
       value: Left Gate
       objectReference: {fileID: 0}
     - target: {fileID: 5663219670037849583, guid: 22d2c44fed4ffa743aac7afe4d993905, type: 3}
+      propertyPath: open
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663219670037849583, guid: 22d2c44fed4ffa743aac7afe4d993905, type: 3}
       propertyPath: correctKey
       value: 
       objectReference: {fileID: 999675352}
@@ -31700,7 +31704,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcaeebf4973d93549ae216f4e34541c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOptions: []
+  dialogueOptions:
+  - 
+  - 
+  - 
+  - 
+  - 
   dialogueOption1: Sure, and I can draw Middle Earth. Doesn't say much does it.
   dialogueOption2: 'Well you''ll never get there, cuz it doesn''t exist. You''ll
     live a miserable life as a delusional drifter and I... I guess I can''t stop
@@ -31711,7 +31720,7 @@ MonoBehaviour:
   dialogueOption4: So you admit they're delusions, good
   dialogueOption5: My cyborg body automatically vaporizes any alcohol. I admit I
     used to have a problem
-  currentText: {fileID: 0}
+  currentText: {fileID: 253712485}
 --- !u!224 &253712488
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33825,6 +33834,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1031682813}
     m_Modifications:
+    - target: {fileID: 682718169335110515, guid: b581fdbd127292d44ab21c4b16d91d05, type: 3}
+      propertyPath: open
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 682718169335110515, guid: b581fdbd127292d44ab21c4b16d91d05, type: 3}
       propertyPath: correctKey
       value: 
@@ -36193,14 +36206,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcaeebf4973d93549ae216f4e34541c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOptions: []
+  dialogueOptions:
+  - 
+  - 
+  - 
+  - 
+  - 
   dialogueOption1: Nope, no strawberries in this. I guess I win :D
   dialogueOption2: O! O! Yea I sense a deep cardboard aftertaste. I guess the only
     way you could know that is if you were there in Paracosm yourself.
   dialogueOption3: Ewww, of course not!
   dialogueOption4: Nope, no bananas in here
   dialogueOption5: I don't taste any metal, and I know metal
-  currentText: {fileID: 0}
+  currentText: {fileID: 348902356}
 --- !u!224 &348902359
 RectTransform:
   m_ObjectHideFlags: 0
@@ -43683,21 +43701,117 @@ PrefabInstance:
       value: 'I saw a lot of grass in Paracosm '
       objectReference: {fileID: 0}
     - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1369478042}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 806218155}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1369478042}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 806218155}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1900507379816776787, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: I'm not playing your stupid game!
       objectReference: {fileID: 0}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1369478042}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 806218155}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -43783,17 +43897,73 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1369478042}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 806218155}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8338132689572969468, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: 'I saw a lot of robots in Paracosm. '
       objectReference: {fileID: 0}
     - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1369478042}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 806218155}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8377136880548012473, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: I saw a lot of guns in Paracosm
@@ -45199,7 +45369,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcaeebf4973d93549ae216f4e34541c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOptions: []
+  dialogueOptions:
+  - 
+  - 
+  - 
+  - 
+  - 
   dialogueOption1: We robots aren't meant to be on boats, it'd be way too dangerous!
   dialogueOption2: How rude! Don't give me back my memory chip, I don't wanna remember
     something so hurtful!
@@ -45210,7 +45385,7 @@ MonoBehaviour:
     described Paracosm.
   dialogueOption5: Wine sounds nice, too bad I can't drink it. Now, I have longing
     to get back to.
-  currentText: {fileID: 0}
+  currentText: {fileID: 573740293}
 --- !u!1 &577514427
 GameObject:
   m_ObjectHideFlags: 0
@@ -46345,14 +46520,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcaeebf4973d93549ae216f4e34541c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOptions: []
+  dialogueOptions:
+  - 
+  - 
+  - 
+  - 
+  - 
   dialogueOption1: Desperation Detected.... Loading Answer.... NO
   dialogueOption2: ANALYSING THREAT... PARACOSM ADDED TO DATABASE
   dialogueOption3: Analysing Response.... Fetching Cares Given.... ZERO
   dialogueOption4: 'Calculating..... About 60% '
   dialogueOption5: DO NOT OFFER ALCOHOL TO AN OFFICER OF THE LAW, I CAN HAVE YOU
     EXTRAJUDICIALLY EXECUTED FOR THAT
-  currentText: {fileID: 0}
+  currentText: {fileID: 587831324}
 --- !u!224 &587831327
 RectTransform:
   m_ObjectHideFlags: 0
@@ -146697,7 +146877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 143085761}
+  target: {fileID: 0}
   cameraAnchor: {fileID: 662305975}
   clue: {fileID: 1728298803}
   text1: {fileID: 504418791}
@@ -146721,10 +146901,10 @@ MonoBehaviour:
   dialogueCamera: {fileID: 1771477937}
   dialogueText: {fileID: 587831324}
   dialogueUnavailableText: {fileID: 982203850}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
+  convincedNPCText: {fileID: 516575545}
+  unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
-  endGameText: {fileID: 0}
+  endGameText: {fileID: 663924737}
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -149124,20 +149304,84 @@ PrefabInstance:
       value: I remember a brewery in Paracosm
       objectReference: {fileID: 0}
     - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 573740296}
     - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1460760449}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 573740296}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1460760449}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1900507379816776787, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
@@ -149161,12 +149405,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 573740296}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1460760449}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_AnchorMax.y
@@ -149289,12 +149565,40 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 573740296}
     - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1460760449}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_AnchorMax.y
@@ -149318,12 +149622,40 @@ PrefabInstance:
         boats
       objectReference: {fileID: 0}
     - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 573740296}
     - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1460760449}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8377136880548012473, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
@@ -153179,7 +153511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 266065010}
+  target: {fileID: 0}
   cameraAnchor: {fileID: 662305975}
   clue: {fileID: 400503684}
   text1: {fileID: 1628444091}
@@ -153931,7 +154263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 143085761}
+  target: {fileID: 0}
   cameraAnchor: {fileID: 662305975}
   clue: {fileID: 1353146099}
   text1: {fileID: 682597146}
@@ -153955,10 +154287,10 @@ MonoBehaviour:
   dialogueCamera: {fileID: 1040588044}
   dialogueText: {fileID: 1369478040}
   dialogueUnavailableText: {fileID: 982203850}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
+  convincedNPCText: {fileID: 516575545}
+  unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
-  endGameText: {fileID: 0}
+  endGameText: {fileID: 663924737}
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -155640,7 +155972,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcaeebf4973d93549ae216f4e34541c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOptions: []
+  dialogueOptions:
+  - 
+  - 
+  - 
+  - 
+  - 
   dialogueOption1: Hmmm, yea it does. And it doesn't say where. Either there's a
     siphoning scheme you uncovered or you've been telling the truth...
   dialogueOption2: Alright Alright, I'm sorry. Just stop talking to me!
@@ -155648,7 +155985,7 @@ MonoBehaviour:
   dialogueOption4: 'It does, for military vehicles during the war, and the ledger
     doesn''t say any are from Paracosm '
   dialogueOption5: Nope, was there a lot of bathrooms in Paracosm?
-  currentText: {fileID: 0}
+  currentText: {fileID: 826388028}
 --- !u!224 &826388031
 RectTransform:
   m_ObjectHideFlags: 0
@@ -156689,7 +157026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 393464290}
+  target: {fileID: 0}
   cameraAnchor: {fileID: 662305975}
   clue: {fileID: 934965593}
   text1: {fileID: 805841273}
@@ -156713,10 +157050,10 @@ MonoBehaviour:
   dialogueCamera: {fileID: 996421341}
   dialogueText: {fileID: 1594228529}
   dialogueUnavailableText: {fileID: 982203850}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
+  convincedNPCText: {fileID: 516575545}
+  unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
-  endGameText: {fileID: 0}
+  endGameText: {fileID: 663924737}
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -162740,13 +163077,73 @@ PrefabInstance:
       value: Would you try this wine?
       objectReference: {fileID: 0}
     - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 587831326}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 697564666}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 587831326}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 697564666}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1900507379816776787, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: If you don't add Paracosm to your database, mark my words I will toss
@@ -162769,9 +163166,41 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 587831326}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 697564666}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -162893,9 +163322,41 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 587831326}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 697564666}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -162917,9 +163378,37 @@ PrefabInstance:
       value: Please just listen to the recording one more time!
       objectReference: {fileID: 0}
     - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 587831326}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 697564666}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8377136880548012473, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: 'I remember the exact place this recording was taken! '
@@ -175090,9 +175579,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 826388030}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 826388030}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1543725629}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1900507379816776787, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: If you keep being rude to me I'll use this ledger to bonk your head!
@@ -177094,21 +177611,117 @@ PrefabInstance:
       value: Would you try some of this wine?
       objectReference: {fileID: 0}
     - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1662011855}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1508990431}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1662011855}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1508990431}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1900507379816776787, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: Don't point that gun at me!
       objectReference: {fileID: 0}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1662011855}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1508990431}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -177194,17 +177807,73 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1662011855}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1508990431}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8338132689572969468, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: Can you scan your memory for the etymology of Paracosm?
       objectReference: {fileID: 0}
     - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1662011855}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1508990431}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8377136880548012473, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: 'I remember seeing a lot of guns in Paracosm, do you know anything about
@@ -181223,6 +181892,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1031682813}
     m_Modifications:
     - target: {fileID: 682718169335110515, guid: b581fdbd127292d44ab21c4b16d91d05, type: 3}
+      propertyPath: open
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 682718169335110515, guid: b581fdbd127292d44ab21c4b16d91d05, type: 3}
       propertyPath: correctKey
       value: 
       objectReference: {fileID: 398598953}
@@ -182366,7 +183039,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcaeebf4973d93549ae216f4e34541c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOptions: []
+  dialogueOptions:
+  - 
+  - 
+  - 
+  - 
+  - 
   dialogueOption1: Nope, it's not a robot! You wouldn't throw that out either, you
     can exchange broken ones for 5 cents back.
   dialogueOption2: Fine then! I'm not gonna tell you!
@@ -182374,7 +183052,7 @@ MonoBehaviour:
   dialogueOption4: Yea! it's a perfectly good fish! And you said Paracosm had a lake,
     right? This is clearly a freshwater fish not from here!
   dialogueOption5: No it's not grass, why would anyone ever throw that out?
-  currentText: {fileID: 0}
+  currentText: {fileID: 1369478040}
 --- !u!224 &1369478043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -184219,21 +184897,113 @@ PrefabInstance:
       value: I remember a brewery with metal barrels
       objectReference: {fileID: 0}
     - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 348902358}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1980139533}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 348902358}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1980139533}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1900507379816776787, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: 'I remember a brewery with cardboard '
       objectReference: {fileID: 0}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 348902358}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1980139533}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -184319,17 +185089,77 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 348902358}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1980139533}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8338132689572969468, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: 'I remember a brewery with strawberries '
       objectReference: {fileID: 0}
     - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 348902358}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1980139533}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8377136880548012473, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: I remember a brewery with apples
@@ -185618,7 +186448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 143085761}
+  target: {fileID: 0}
   cameraAnchor: {fileID: 662305975}
   clue: {fileID: 29809682}
   text1: {fileID: 1395046203}
@@ -185642,10 +186472,10 @@ MonoBehaviour:
   dialogueCamera: {fileID: 1282217277}
   dialogueText: {fileID: 573740293}
   dialogueUnavailableText: {fileID: 982203850}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
+  convincedNPCText: {fileID: 516575545}
+  unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
-  endGameText: {fileID: 0}
+  endGameText: {fileID: 663924737}
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -187512,7 +188342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 143085761}
+  target: {fileID: 0}
   cameraAnchor: {fileID: 662305975}
   clue: {fileID: 707237539}
   text1: {fileID: 447202836}
@@ -187536,10 +188366,10 @@ MonoBehaviour:
   dialogueCamera: {fileID: 1604064370}
   dialogueText: {fileID: 1662011853}
   dialogueUnavailableText: {fileID: 982203850}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
+  convincedNPCText: {fileID: 516575545}
+  unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
-  endGameText: {fileID: 0}
+  endGameText: {fileID: 663924737}
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -189469,7 +190299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 187934114}
+  target: {fileID: 0}
   cameraAnchor: {fileID: 662305975}
   clue: {fileID: 500437566}
   text1: {fileID: 1790659364}
@@ -189493,10 +190323,10 @@ MonoBehaviour:
   dialogueCamera: {fileID: 1227270633}
   dialogueText: {fileID: 826388028}
   dialogueUnavailableText: {fileID: 982203850}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
+  convincedNPCText: {fileID: 516575545}
+  unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
-  endGameText: {fileID: 0}
+  endGameText: {fileID: 663924737}
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -191536,6 +192366,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114069760473322642, guid: 0456882ebacfb074f93134e3ae2b40ad, type: 3}
+      propertyPath: open
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114069760473322642, guid: 0456882ebacfb074f93134e3ae2b40ad, type: 3}
       propertyPath: correctKey
       value: 
       objectReference: {fileID: 368172204}
@@ -191823,7 +192657,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcaeebf4973d93549ae216f4e34541c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOptions: []
+  dialogueOptions:
+  - 
+  - 
+  - 
+  - 
+  - 
   dialogueOption1: You're right, a train couldn't get from those two stops without
     stopping for fuel in the middle. There's definitely a stop missing!
   dialogueOption2: Now that's just wrong
@@ -191832,7 +192671,7 @@ MonoBehaviour:
   dialogueOption4: Well yea, you know this is just a uniform, right?
   dialogueOption5: I'd have to open my visor to do that and I just don't feel like
     it
-  currentText: {fileID: 0}
+  currentText: {fileID: 1594228529}
 --- !u!224 &1594228532
 RectTransform:
   m_ObjectHideFlags: 0
@@ -194033,7 +194872,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcaeebf4973d93549ae216f4e34541c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOptions: []
+  dialogueOptions:
+  - 
+  - 
+  - 
+  - 
+  - 
   dialogueOption1: "Sure, here it is: From English para- (prefix meaning \u2018alongside,
     beside\u2019) (from Ancient Greek \u03C0\u03B1\u03C1\u03B1- (para-, prefix meaning
     \u2018beside\u2019)) + English cosm (os) (\u201Cuniverse\u201D) (from Ancient
@@ -221691,20 +222535,84 @@ PrefabInstance:
       value: Can you drink some of this Paracosm wine?
       objectReference: {fileID: 0}
     - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1594228531}
     - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 869326834}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1594228531}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 869326834}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1900507379816776787, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
@@ -221727,12 +222635,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1594228531}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 869326834}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_AnchorMax.y
@@ -221855,12 +222795,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1594228531}
     - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 869326834}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_AnchorMax.y
@@ -221884,12 +222856,40 @@ PrefabInstance:
         long as between all the other stops? '
       objectReference: {fileID: 0}
     - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1594228531}
     - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 869326834}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8377136880548012473, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
@@ -227192,7 +228192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 143085761}
+  target: {fileID: 0}
   cameraAnchor: {fileID: 662305975}
   clue: {fileID: 1740030173}
   text1: {fileID: 762163160}
@@ -227216,10 +228216,10 @@ MonoBehaviour:
   dialogueCamera: {fileID: 644865038}
   dialogueText: {fileID: 348902356}
   dialogueUnavailableText: {fileID: 982203850}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
+  convincedNPCText: {fileID: 516575545}
+  unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
-  endGameText: {fileID: 0}
+  endGameText: {fileID: 663924737}
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -234655,7 +235655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114069760473322642, guid: 0456882ebacfb074f93134e3ae2b40ad, type: 3}
       propertyPath: open
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114069760473322642, guid: 0456882ebacfb074f93134e3ae2b40ad, type: 3}
       propertyPath: correctKey
@@ -253706,6 +254706,10 @@ PrefabInstance:
     - target: {fileID: 5235873452693489938, guid: 7a6674745c357e045ab45832e4282828, type: 3}
       propertyPath: m_Name
       value: Sci-fi_character_unity_green Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235873452693489938, guid: 7a6674745c357e045ab45832e4282828, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7958548260781018492, guid: 7a6674745c357e045ab45832e4282828, type: 3}
       propertyPath: m_Layer

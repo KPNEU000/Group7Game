@@ -4,12 +4,17 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 using NUnit.Framework;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(AudioSource))]
 public class PlayerMovement : MonoBehaviour
 {
+
+    public static PlayerMovement Instance;
+    public bool canLoadClueList = true;
+
     [Header("Controls")]
     public float speed = 10f;
     public float jumpHeight = 0.5f;
@@ -32,9 +37,16 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Inventory")]
     public List<GameObject> keys;
-    public static List<GameObject> clues;
-    public static int cluesCollected = 0;
+    public List<GameObject> clues = new List<GameObject>();
+    public int cluesCollected = 0;
+    public List<String> clueStrings;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    private void Awake()
+    {
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -108,6 +120,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
+        if (SceneManager.GetActiveScene().name == "Level 3"
+        && canLoadClueList)
+        {
+            LoadClueList();
+            canLoadClueList = false;
+        }
+
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
@@ -143,6 +163,10 @@ public class PlayerMovement : MonoBehaviour
         {
             UpdatePlayerAnim(3);
         }
+        if (moveHorizontal == 0 && moveVertical == 0)
+        {
+            UpdatePlayerAnim(0);
+        }
         controller.Move(input * speed * Time.deltaTime);
     }
 
@@ -161,25 +185,38 @@ public class PlayerMovement : MonoBehaviour
         animator.SetInteger("animState", animState);
     }
 
-    public static List<GameObject> GetList()
+    public void AddClueToList(GameObject clue) //Add the string of the picked up clue to this list so it can be reloaded at the start of level 3
     {
-        return clues; 
+        clueStrings.Add(clue.name);
     }
-        
-    /*
-    void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Collided with " + collision.transform.name);
 
-        //GROUNDED CHECK
-        ContactPoint ground = collision.contacts[0]; //The first point of collision, which in this case is the floor 
-        if(ground.normal.y > 0.5f) //roughly horizontal surface
+    public void LoadClueList()
+    {
+        foreach (String c in clueStrings)
         {
-            isGrounded = true;
+            clues.Add(GameObject.Find(c));
+            Debug.Log("ATTEMPTED TO LOAD LIST");
         }
-        Debug.Log("Contact position: " + ground.point);
-        Debug.Log("Contact normal: " + ground.normal); //1 if horizontal, 0 if vertical 
     }
-    */
+
+    public List<GameObject> GetClues()
+    {
+        return clues;
+    }
+/*
+                    void OnCollisionEnter(Collision collision)
+                    {
+                        Debug.Log("Collided with " + collision.transform.name);
+
+                        //GROUNDED CHECK
+                        ContactPoint ground = collision.contacts[0]; //The first point of collision, which in this case is the floor 
+                        if(ground.normal.y > 0.5f) //roughly horizontal surface
+                        {
+                            isGrounded = true;
+                        }
+                        Debug.Log("Contact position: " + ground.point);
+                        Debug.Log("Contact normal: " + ground.normal); //1 if horizontal, 0 if vertical 
+                    }
+                    */
 
 }

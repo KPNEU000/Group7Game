@@ -56,10 +56,13 @@ public class GetKey : MonoBehaviour //Should really be renamed GetCollectable or
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    objectHitByRaycast.transform.GetComponent<ClueBehavior>().PickedUp();
+                    Debug.Log(objectHitByRaycast.collider.transform.gameObject);
+                    //Debug.Log("CLUES" + PlayerMovement.clues);
                     playerMovement.UpdatePlayerAnim(1);
-                    PlayerMovement.clues.Add(objectHitByRaycast.transform.gameObject);
-                    PlayerMovement.cluesCollected++;
+                    playerMovement.clues.Add(objectHitByRaycast.collider.transform.gameObject);
+                    playerMovement.AddClueToList(objectHitByRaycast.collider.transform.gameObject);
+                    playerMovement.cluesCollected++;
+                    objectHitByRaycast.transform.GetComponent<ClueBehavior>().PickedUp();
                     clueInventory.text = clueInventory.text + "\n" + objectHitByRaycast.transform.name;
                 }
             }

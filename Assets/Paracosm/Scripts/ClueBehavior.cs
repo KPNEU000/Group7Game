@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ClueBehavior : MonoBehaviour
@@ -9,10 +10,13 @@ public class ClueBehavior : MonoBehaviour
     [SerializeField]
     private AudioClip clueCollected;
     LevelManager levelManager;
+    public PlayerMovement pm;
+
 
     void Start()
     {
         levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+        pm = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
     void Update()
     {
@@ -37,6 +41,7 @@ public class ClueBehavior : MonoBehaviour
 
     public void PickedUp()
     {
+        pm.AddClueToList(gameObject);
         levelManager.ItemCollected(gameObject.name);
         collected = true;
         AudioSource.PlayClipAtPoint(clueCollected, Camera.main.transform.position);

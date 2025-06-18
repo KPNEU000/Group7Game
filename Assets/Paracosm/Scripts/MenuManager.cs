@@ -69,11 +69,12 @@ public class MenuManager : MonoBehaviour
             timeDisplay.GetComponent<TextMeshProUGUI>().text = Time.time.ToString("0.00");
         }
     }
-
+/*
     public void DisplayCluesCollected(GameObject clueDisplay)
     {
         clueDisplay.GetComponent<TextMeshProUGUI>().text = PlayerMovement.cluesCollected.ToString() + "/" + PlayerMovement.clues.Count.ToString();
     }
+    */
 
     public void QuitGame()
     {

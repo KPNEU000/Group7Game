@@ -1,14 +1,22 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Video;
 
 public class KeyBehavior : MonoBehaviour
 {
+    public static KeyBehavior Instance;
 
     [Header("Audio")]
     [SerializeField]
     private AudioClip pickUpSFX;
     [SerializeField]
     private AudioClip twinkle;
+
+    private void Awake()
+    {
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Start()
     {

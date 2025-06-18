@@ -61,10 +61,11 @@ public class LevelManager : MonoBehaviour
 
     void LevelBeat()
     {
-        IsPlaying = false;
+        //IsPlaying = false;
         DisplayGameMessage("Clue Found!");
-        
-        Invoke("ReloadSameScene", 5);
+
+        LoadSceneByName(nextLevel);
+        //Invoke("ReloadSameScene", 5);
     }
 
     public void LevelLost() {

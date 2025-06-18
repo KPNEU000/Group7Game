@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
@@ -58,14 +60,12 @@ public class NPCBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (!target)
-        {
-            target = GameObject.FindGameObjectWithTag("Player").transform;
-        }
+
+
         if (!cameraAnchor)
-        {
-            cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
-        }
+            {
+                cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
+            }
         thirdPersonCameraAnchor = cameraAnchor.GetComponent<ThirdPersonCamera>();
         if (walkable) {
             agent.SetDestination(target.position);
@@ -81,6 +81,14 @@ public class NPCBehavior : MonoBehaviour
 
     void Update()
     {
+        if (!target)
+        {
+            target = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+        if (!pm)
+        {
+            pm = target.GetComponent<PlayerMovement>();
+        }
         switch (currentState)
         {
             case NPCState.Idle:
@@ -146,24 +154,7 @@ public class NPCBehavior : MonoBehaviour
 
         pm = target.GetComponent<PlayerMovement>();
         //Check if you have the right clue to enter dialogue
-        if (dialogueEnabled)
-        {
-            if (PlayerMovement.GetList().Count > 0)
-            {
-                foreach (GameObject c in PlayerMovement.clues)
-                {
-                    if (c == null)
-                    {
-                        dialogueAvailable = false;
-                    }
-                    else if (c == clue)
-                    {
-                        dialogueAvailable = true;
-                        requiredConvincing++;
-                    }
-                }
-            }
-        }
+        
     }
 
     void OnTriggerStay(Collider other)
@@ -172,9 +163,22 @@ public class NPCBehavior : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.T))
             {
+
                 currentState = NPCState.Talk;
                 if (dialogueEnabled)
                 {
+                    foreach (GameObject c in pm.GetClues())
+                    {
+                        if (c == null)
+                        {
+                            dialogueAvailable = false;
+                        }
+                        else if (c == clue)
+                        {
+                            dialogueAvailable = true;
+                            requiredConvincing++;
+                        }
+                    }
                     if (dialogueAvailable)
                     {
                         UnityEngine.Cursor.visible = true;
@@ -239,8 +243,8 @@ public class NPCBehavior : MonoBehaviour
             dialogueCamera.SetActive(false);
             dialogueCanvas.SetActive(false);
             gameUI.SetActive(false);
-            UnityEngine.Cursor.visible = false;
-            UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+            //UnityEngine.Cursor.visible = false;
+            //UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         }
     }
 

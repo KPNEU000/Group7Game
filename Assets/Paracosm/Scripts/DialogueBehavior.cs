@@ -11,7 +11,7 @@ public class DialogueBehavior : MonoBehaviour
     public string dialogueOption3;
     public string dialogueOption4;
     public string dialogueOption5;
-    public TextMeshProUGUI currentText;
+    public TMP_Text currentText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +20,7 @@ public class DialogueBehavior : MonoBehaviour
         dialogueOptions[2] = dialogueOption3;
         dialogueOptions[3] = dialogueOption4;
         dialogueOptions[4] = dialogueOption5;
-        currentText = GetComponent<TextMeshProUGUI>();
+        currentText = GetComponent<TMP_Text>();
     }
 
     public void NextDialogue(int dialogueIndex)

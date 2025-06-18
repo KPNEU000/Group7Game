@@ -2,7 +2,11 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
 using TMPro;
+<<<<<<< Updated upstream
 using UnityEngine.AI;
+=======
+using System.Collections;
+>>>>>>> Stashed changes
 
 public class NPCBehavior : MonoBehaviour
 {
@@ -33,10 +37,13 @@ public class NPCBehavior : MonoBehaviour
 
     [Header("Dialogue")]
     public bool dialogueEnabled;
+    [SerializeField]
+    bool dialogueAvailable = false;
     public GameObject dialogueCanvas;
     public GameObject gameUI;
     public GameObject dialogueCamera;
     public TMP_Text dialogueText;
+<<<<<<< Updated upstream
 
     [Header("FSM")]
     public NPCState currentState = NPCState.Idle;
@@ -44,6 +51,11 @@ public class NPCBehavior : MonoBehaviour
     public float detectionRange = 20f;
     public NavMeshAgent agent;
 
+=======
+    public GameObject dialogueUnavailableText;
+    public PlayerMovement pm;
+    public static int requiredConvincing = 0;
+>>>>>>> Stashed changes
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,6 +68,7 @@ public class NPCBehavior : MonoBehaviour
             cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
         }
         thirdPersonCameraAnchor = cameraAnchor.GetComponent<ThirdPersonCamera>();
+<<<<<<< Updated upstream
         if (walkable) {
             agent.SetDestination(target.position);
             if (!agent) {
@@ -116,6 +129,29 @@ public class NPCBehavior : MonoBehaviour
         if (walkable && agent.enabled) {
             agent.enabled = false;
         }
+=======
+
+        pm = target.GetComponent<PlayerMovement>();
+        //Check if you have the right clue to enter dialogue
+        if (dialogueEnabled)
+        {
+            if (PlayerMovement.GetList()[0] != null)
+            {
+                foreach (GameObject c in PlayerMovement.clues)
+                {
+                    if (c == null)
+                    {
+                        dialogueAvailable = false;
+                    }
+                    else if (c == clue)
+                    {
+                        dialogueAvailable = true;
+                        requiredConvincing++;
+                    }
+                }
+            }
+        }
+>>>>>>> Stashed changes
     }
 
     void OnTriggerStay(Collider other)
@@ -127,10 +163,18 @@ public class NPCBehavior : MonoBehaviour
                 currentState = NPCState.Talk;
                 if (dialogueEnabled)
                 {
-                    dialogueCamera.SetActive(true);
-                    dialogueText.gameObject.SetActive(true);
-                    dialogueCanvas.gameObject.SetActive(true);
-                    gameUI.SetActive(false);
+                    if (dialogueAvailable)
+                    {
+                        dialogueCamera.SetActive(true);
+                        dialogueText.gameObject.SetActive(true);
+                        dialogueCanvas.gameObject.SetActive(true);
+                        gameUI.SetActive(false);
+                    }
+                    else
+                    {
+                        StartCoroutine("DialogueUnavailable");
+                        //dialogueUnavailableText.SetActive(false);
+                    }
                 }
                 else
                 {
@@ -148,6 +192,13 @@ public class NPCBehavior : MonoBehaviour
             }
             
         }
+    }
+
+    IEnumerator DialogueUnavailable()
+    {
+        dialogueUnavailableText.SetActive(true);
+        yield return new WaitForSeconds(1);
+        dialogueUnavailableText.SetActive(false);
     }
 
     void OnTriggerExit(Collider other)

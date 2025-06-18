@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
+using NUnit.Framework;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(CharacterController))]
@@ -133,6 +135,14 @@ public class PlayerMovement : MonoBehaviour
         }
 
         moveDirection.y -= gravity * Time.deltaTime; //Apply gravity constantly
+        if (moveHorizontal != 0 || moveVertical > 0)
+        {
+            UpdatePlayerAnim(4);
+        }
+        if (moveVertical < 0)
+        {
+            UpdatePlayerAnim(3);
+        }
         controller.Move(input * speed * Time.deltaTime);
     }
 
@@ -150,7 +160,11 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetInteger("animState", animState);
     }
-    
+
+    public static List<GameObject> GetList()
+    {
+        return clues; 
+    }
         
     /*
     void OnCollisionEnter(Collision collision)

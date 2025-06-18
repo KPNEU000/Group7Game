@@ -86,7 +86,7 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(scene.name);
     }
 
-    void LoadSceneByName(string name) {
+    public void LoadSceneByName(string name) {
         SceneManager.LoadScene(name);
     }
 

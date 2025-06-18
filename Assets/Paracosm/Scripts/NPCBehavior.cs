@@ -2,11 +2,10 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
 using TMPro;
-<<<<<<< Updated upstream
 using UnityEngine.AI;
-=======
 using System.Collections;
->>>>>>> Stashed changes
+using UnityEngine.SceneManagement;
+
 
 public class NPCBehavior : MonoBehaviour
 {
@@ -43,19 +42,19 @@ public class NPCBehavior : MonoBehaviour
     public GameObject gameUI;
     public GameObject dialogueCamera;
     public TMP_Text dialogueText;
-<<<<<<< Updated upstream
-
+    public GameObject dialogueUnavailableText;
+    public GameObject convincedNPCText;
+    public GameObject unconvincedNPCText;
+    public PlayerMovement pm;
+    public static int requiredConvincing = 0;
+    public static int convincedNPCs = 0;
+    public TextMeshProUGUI endGameText;
     [Header("FSM")]
     public NPCState currentState = NPCState.Idle;
     public bool walkable = false;
     public float detectionRange = 20f;
     public NavMeshAgent agent;
-
-=======
-    public GameObject dialogueUnavailableText;
-    public PlayerMovement pm;
-    public static int requiredConvincing = 0;
->>>>>>> Stashed changes
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -68,7 +67,6 @@ public class NPCBehavior : MonoBehaviour
             cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
         }
         thirdPersonCameraAnchor = cameraAnchor.GetComponent<ThirdPersonCamera>();
-<<<<<<< Updated upstream
         if (walkable) {
             agent.SetDestination(target.position);
             if (!agent) {
@@ -81,8 +79,10 @@ public class NPCBehavior : MonoBehaviour
         }
     }
 
-    void Update() {
-        switch (currentState) {
+    void Update()
+    {
+        switch (currentState)
+        {
             case NPCState.Idle:
                 Idle();
                 break;
@@ -93,6 +93,20 @@ public class NPCBehavior : MonoBehaviour
                 Talk();
                 break;
         }
+
+        //End Game
+        if (dialogueEnabled && requiredConvincing == convincedNPCs && requiredConvincing != 0)
+        {
+            endGameText.gameObject.SetActive(true);
+            endGameText.text = convincedNPCs.ToString() + "/8 NPCs were convinced";
+            Invoke("EndGame", 5);
+        }
+        
+    }
+
+    void EndGame()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 
     void Idle() {
@@ -129,13 +143,12 @@ public class NPCBehavior : MonoBehaviour
         if (walkable && agent.enabled) {
             agent.enabled = false;
         }
-=======
 
         pm = target.GetComponent<PlayerMovement>();
         //Check if you have the right clue to enter dialogue
         if (dialogueEnabled)
         {
-            if (PlayerMovement.GetList()[0] != null)
+            if (PlayerMovement.GetList().Count > 0)
             {
                 foreach (GameObject c in PlayerMovement.clues)
                 {
@@ -151,7 +164,6 @@ public class NPCBehavior : MonoBehaviour
                 }
             }
         }
->>>>>>> Stashed changes
     }
 
     void OnTriggerStay(Collider other)
@@ -165,6 +177,8 @@ public class NPCBehavior : MonoBehaviour
                 {
                     if (dialogueAvailable)
                     {
+                        UnityEngine.Cursor.visible = true;
+                        UnityEngine.Cursor.lockState = CursorLockMode.None;
                         dialogueCamera.SetActive(true);
                         dialogueText.gameObject.SetActive(true);
                         dialogueCanvas.gameObject.SetActive(true);
@@ -172,8 +186,7 @@ public class NPCBehavior : MonoBehaviour
                     }
                     else
                     {
-                        StartCoroutine("DialogueUnavailable");
-                        //dialogueUnavailableText.SetActive(false);
+                        StartCoroutine("TemporaryText", dialogueUnavailableText);
                     }
                 }
                 else
@@ -194,11 +207,24 @@ public class NPCBehavior : MonoBehaviour
         }
     }
 
-    IEnumerator DialogueUnavailable()
+    IEnumerator TemporaryText(GameObject text)
     {
-        dialogueUnavailableText.SetActive(true);
+        text.SetActive(true);
         yield return new WaitForSeconds(1);
-        dialogueUnavailableText.SetActive(false);
+        text.SetActive(false);
+    }
+
+    public void CorrectDialogue()
+    {
+        convincedNPCs++;
+        StartCoroutine("TemporaryText", convincedNPCText);
+        dialogueEnabled = false;
+    }
+
+    public void IncorrectDialogue()
+    {
+        StartCoroutine("TemporaryText", unconvincedNPCText);
+        dialogueEnabled = false;
     }
 
     void OnTriggerExit(Collider other)
@@ -213,6 +239,8 @@ public class NPCBehavior : MonoBehaviour
             dialogueCamera.SetActive(false);
             dialogueCanvas.SetActive(false);
             gameUI.SetActive(false);
+            UnityEngine.Cursor.visible = false;
+            UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
@@ -249,35 +277,5 @@ public class NPCBehavior : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 
-    void LateUpdate() //Called after everything in the Update field 
-    {
-        /*
-        if (target && head)
-        {
-            Vector3 direction = target.position - head.transform.position;
-            Quaternion lookRotation = Quaternion.LookRotation(direction);
-            //
-            if (lookRotation != minQuaternion && lookRotation != maxQuaternion)
-            {
-                head.LookAt(target.position);
-            }
-            else
-            {
-                Debug.Log(gameObject.name + "ROTATION" + lookRotation);
-            }
-            /*
-                head.transform.eulerAngles = new Vector3(
-        Mathf.Clamp(head.transform.eulerAngles.x, minimumX, maximumX),
-        Mathf.Clamp(head.transform.eulerAngles.y, minimumY, maximumY),
-        Mathf.Clamp(head.transform.eulerAngles.z, minimumZ, maximumZ)
-    );
-
-                Vector3 direction = target.position - head.transform.position;
-                Quaternion lookRotation = Quaternion.LookRotation(direction);
-                head.rotation = Quaternion.Slerp(head.rotation, lookRotation, 15 * Time.deltaTime);
-                }
-            */
-        
-        }
-    }
+}
 

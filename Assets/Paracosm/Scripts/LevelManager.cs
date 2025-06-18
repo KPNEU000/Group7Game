@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public static bool IsPlaying {get; private set;}
+    //public static LevelManager Instance;
+    public static bool IsPlaying { get; private set; }
     public float levelTime = 300;
     public TMP_Text timerText;
     public TMP_Text messageText;
@@ -15,7 +16,15 @@ public class LevelManager : MonoBehaviour
     float countdown;
     bool isFound = false;
     string clueName;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+/*
+    private void Awake()
+    {
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+    */
     void Start()
     {
         countdown = levelTime;

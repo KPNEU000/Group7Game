@@ -51,6 +51,7 @@ public class NPCBehavior : MonoBehaviour
     public static int requiredConvincing = 0;
     public static int convincedNPCs = 0;
     public TextMeshProUGUI endGameText;
+    public bool isConvinced = true;
     [Header("FSM")]
     public NPCState currentState = NPCState.Idle;
     public bool walkable = false;
@@ -101,9 +102,9 @@ public class NPCBehavior : MonoBehaviour
                 Talk();
                 break;
         }
-
+        Debug.Log(requiredConvincing + "/" + convincedNPCs);
         //End Game
-        if (dialogueEnabled && requiredConvincing == convincedNPCs && requiredConvincing != 0)
+        if (requiredConvincing == convincedNPCs && requiredConvincing != 0)
         {
             endGameText.gameObject.SetActive(true);
             endGameText.text = convincedNPCs.ToString() + "/8 NPCs were convinced";
@@ -176,7 +177,11 @@ public class NPCBehavior : MonoBehaviour
                         else if (c == clue)
                         {
                             dialogueAvailable = true;
-                            requiredConvincing++;
+                            if (isConvinced)
+                            {
+                                requiredConvincing++;
+                                isConvinced = false;
+                            }
                         }
                     }
                     if (dialogueAvailable)
@@ -220,15 +225,21 @@ public class NPCBehavior : MonoBehaviour
 
     public void CorrectDialogue()
     {
-        convincedNPCs++;
-        StartCoroutine("TemporaryText", convincedNPCText);
-        dialogueEnabled = false;
+        if (dialogueEnabled)
+        {
+            convincedNPCs++;
+            StartCoroutine("TemporaryText", convincedNPCText);
+            dialogueEnabled = false;
+        }
     }
 
     public void IncorrectDialogue()
     {
-        StartCoroutine("TemporaryText", unconvincedNPCText);
-        dialogueEnabled = false;
+        if (dialogueEnabled)
+        {
+            StartCoroutine("TemporaryText", unconvincedNPCText);
+            dialogueEnabled = false;
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -238,14 +249,15 @@ public class NPCBehavior : MonoBehaviour
         text2.SetActive(false);
 
         thirdPersonCameraAnchor.UpdateCameraPosition(target.gameObject, gameObject, true);
-        if (dialogueEnabled)
+        if (dialogueCamera)
         {
             dialogueCamera.SetActive(false);
             dialogueCanvas.SetActive(false);
             gameUI.SetActive(false);
-            //UnityEngine.Cursor.visible = false;
-            //UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+            UnityEngine.Cursor.visible = false;
+            UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         }
+        
     }
 
     void LookForPlayer() {

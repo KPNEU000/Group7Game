@@ -31575,15 +31575,15 @@ MonoBehaviour:
     you can't just deal with being a normal amnesiac? I was delusional once too,
     there's nothing wrong with that.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278226943
-  m_fontColor: {r: 1, g: 0.55935425, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -31638,7 +31638,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 3.2948036}
+  m_margin: {x: 0, y: 0, z: -3.6527507, w: 3.2948036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -31670,7 +31670,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36077,15 +36077,15 @@ MonoBehaviour:
     You want me to drink that Paracosm wine? And you''re going to guess
     what''s in it? I like this game too!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278226943
-  m_fontColor: {r: 1, g: 0.55935425, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -36140,7 +36140,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 3.2948036}
+  m_margin: {x: 0, y: 0, z: -4.593279, w: 3.2948036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -36172,7 +36172,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36227,7 +36227,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348902355}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.4}
+  m_LocalPosition: {x: 0, y: 0, z: 2.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36235,7 +36235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.61, y: 4.7}
+  m_AnchoredPosition: {x: -4.74, y: 6.07}
   m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &350557338
@@ -43776,6 +43776,22 @@ PrefabInstance:
       propertyPath: m_text
       value: I'm not playing your stupid game!
       objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -43812,9 +43828,45 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6210407585975946040, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Pivot.x
@@ -43928,6 +43980,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8338132689572969468, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: 'I saw a lot of robots in Paracosm. '
@@ -43967,6 +44035,22 @@ PrefabInstance:
     - target: {fileID: 8377136880548012473, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: I saw a lot of guns in Paracosm
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45221,15 +45305,15 @@ MonoBehaviour:
   m_text: 'You''re giving my Memory Chip back? Thanks I guess, did you find anything
     interesting on it? '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278226943
-  m_fontColor: {r: 1, g: 0.55935425, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -45284,7 +45368,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 3.2948036}
+  m_margin: {x: -1.6209259, y: 0, z: -1.8710022, w: 3.2948036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -45316,7 +45400,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -46391,15 +46475,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Repeat Offender Identified....\nRepeating Command.....\nSCRAM!!!! \n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278226943
-  m_fontColor: {r: 1, g: 0.55935425, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -46454,7 +46538,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 3.2948036}
+  m_margin: {x: 0, y: 0, z: -1.8493652, w: 3.2948036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -46486,7 +46570,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -146905,6 +146989,7 @@ MonoBehaviour:
   unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
   endGameText: {fileID: 663924737}
+  isConvinced: 1
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -149443,6 +149528,10 @@ PrefabInstance:
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_AnchorMax.y
@@ -153539,6 +153628,7 @@ MonoBehaviour:
   unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
   endGameText: {fileID: 663924737}
+  isConvinced: 1
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -154291,6 +154381,7 @@ MonoBehaviour:
   unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
   endGameText: {fileID: 663924737}
+  isConvinced: 1
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -155843,15 +155934,15 @@ MonoBehaviour:
   m_text: You again? I saw you have some sort of mindblast over there. Were you "transported
     by your memories" HAHA.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278226943
-  m_fontColor: {r: 1, g: 0.55935425, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -155906,7 +155997,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 3.2948036}
+  m_margin: {x: -1.8371239, y: 0, z: -1.7516136, w: 3.2948036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -155938,7 +156029,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -157054,6 +157145,7 @@ MonoBehaviour:
   unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
   endGameText: {fileID: 663924737}
+  isConvinced: 1
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -175575,9 +175667,41 @@ PrefabInstance:
       value: Does the ledger say anything about a lot of power going to plumbing?
       objectReference: {fileID: 0}
     - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 826388030}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1543725629}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239708235286856169, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -175600,11 +175724,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CorrectDialogue
+      value: IncorrectDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1554011395485678239, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -175614,13 +175742,97 @@ PrefabInstance:
       propertyPath: m_text
       value: If you keep being rude to me I'll use this ledger to bonk your head!
       objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 826388030}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1543725629}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6210407585975946040, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Pivot.x
@@ -175703,21 +175915,113 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 826388030}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1543725629}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: IncorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651429283650792821, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8338132689572969468, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: I remember Paracosm had neon lights everywhere, even during the day.
         Does the Ledger say a lot of energy went to lighting?
       objectReference: {fileID: 0}
     - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 826388030}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1543725629}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CorrectDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343598437917984227, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8377136880548012473, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: Does the Ledger say anything about Paracosm?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -177686,6 +177990,22 @@ PrefabInstance:
       propertyPath: m_text
       value: Don't point that gun at me!
       objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -177722,9 +178042,45 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6210407585975946040, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Pivot.x
@@ -177838,6 +178194,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8338132689572969468, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: Can you scan your memory for the etymology of Paracosm?
@@ -177878,6 +178250,22 @@ PrefabInstance:
       propertyPath: m_text
       value: 'I remember seeing a lot of guns in Paracosm, do you know anything about
         that? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -182910,15 +183298,15 @@ MonoBehaviour:
     gave me. I wanna see if you can guess what's in it if you really think it's from
     Paracosm.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278226943
-  m_fontColor: {r: 1, g: 0.55935425, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -182973,7 +183361,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 3.2948036}
+  m_margin: {x: 0, y: 0, z: -2.1457593, w: 3.2948036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -183005,7 +183393,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -183060,16 +183448,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369478039}
-  m_LocalRotation: {x: 0, y: -0.23887235, z: 0, w: 0.971051}
-  m_LocalPosition: {x: 0, y: 0, z: -3.45}
+  m_LocalRotation: {x: 0, y: -0.2206123, z: 0, w: 0.9753616}
+  m_LocalPosition: {x: 0, y: 0, z: -2.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1303308889}
-  m_LocalEulerAnglesHint: {x: 0, y: -27.64, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -25.49, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.1, y: 1.74}
+  m_AnchoredPosition: {x: 3.84, y: 2.93}
   m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1371226559
@@ -184968,6 +185356,22 @@ PrefabInstance:
       propertyPath: m_text
       value: 'I remember a brewery with cardboard '
       objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409949097291170444, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3087740946640775973, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -185004,9 +185408,45 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144656498716758420, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5718916517695191144, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813819840834656741, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6210407585975946040, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_Pivot.x
@@ -185124,6 +185564,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080516963557540589, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8338132689572969468, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: 'I remember a brewery with strawberries '
@@ -185163,6 +185619,22 @@ PrefabInstance:
     - target: {fileID: 8377136880548012473, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
       propertyPath: m_text
       value: I remember a brewery with apples
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780889822566917358, guid: 0d8653912e8a881478ba6a679147bcdb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -186476,6 +186948,7 @@ MonoBehaviour:
   unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
   endGameText: {fileID: 663924737}
+  isConvinced: 1
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -188370,6 +188843,7 @@ MonoBehaviour:
   unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
   endGameText: {fileID: 663924737}
+  isConvinced: 1
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -190327,6 +190801,7 @@ MonoBehaviour:
   unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
   endGameText: {fileID: 663924737}
+  isConvinced: 1
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -192528,15 +193003,15 @@ MonoBehaviour:
   m_text: 'Hi again? You wanna join me watching this sunset? Oh, you want me to look
     at that tram map again? '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278226943
-  m_fontColor: {r: 1, g: 0.55935425, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -192591,7 +193066,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 3.2948036}
+  m_margin: {x: -1.8730888, y: 0, z: -2.3896065, w: 3.2948036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -192623,7 +193098,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -192688,7 +193163,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 5}
+  m_AnchoredPosition: {x: -0.86, y: 5}
   m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1594577705
@@ -194743,15 +195218,15 @@ MonoBehaviour:
   m_text: 'Hello again Citizen, I had a lot of fun scanning that dictionary. What
     do you want to ask me this time? '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278226943
-  m_fontColor: {r: 1, g: 0.55935425, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -194806,7 +195281,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 3.2948036}
+  m_margin: {x: 0, y: 0, z: -1.1784744, w: 3.2948036}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -194838,7 +195313,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -194891,7 +195366,7 @@ MonoBehaviour:
     I don't remember where. I'm not really designed to forget stuff like that. Maybe
     that was paracosm...
   dialogueOption5: Oh sorry I forgot my mouth attachment at home
-  currentText: {fileID: 0}
+  currentText: {fileID: 1662011853}
 --- !u!224 &1662011856
 RectTransform:
   m_ObjectHideFlags: 0
@@ -228220,6 +228695,7 @@ MonoBehaviour:
   unconvincedNPCText: {fileID: 1354545375}
   pm: {fileID: 0}
   endGameText: {fileID: 663924737}
+  isConvinced: 1
   currentState: 0
   walkable: 0
   detectionRange: 20
@@ -235689,56 +236165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 143085761}
---- !u!1 &2088494561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2088494563}
-  - component: {fileID: 2088494562}
-  m_Layer: 0
-  m_Name: LevelManager
-  m_TagString: LevelManager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2088494562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088494561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 105eb61b35a2b144295f49fae039b4c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelTime: 300
-  timerText: {fileID: 139790463}
-  messageText: {fileID: 625236696}
-  clueHint: {fileID: 794021766}
-  nextLevel: Level 1
-  lastClue: {fileID: 500437566}
---- !u!4 &2088494563
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088494561}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2091606083
 GameObject:
   m_ObjectHideFlags: 0
@@ -255291,7 +255717,6 @@ SceneRoots:
   - {fileID: 695278405}
   - {fileID: 1653426361}
   - {fileID: 688342855}
-  - {fileID: 2088494563}
   - {fileID: 1594181968}
   - {fileID: 116974461}
   - {fileID: 1709853585}

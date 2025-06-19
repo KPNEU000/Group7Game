@@ -52,6 +52,7 @@ public class NPCBehavior : MonoBehaviour
     public static int convincedNPCs = 0;
     public TextMeshProUGUI endGameText;
     public bool isConvinced = true;
+    public GameObject panel;
     [Header("FSM")]
     public NPCState currentState = NPCState.Idle;
     public bool walkable = false;
@@ -115,7 +116,7 @@ public class NPCBehavior : MonoBehaviour
 
     void EndGame()
     {
-        SceneManager.LoadScene("Main Menu");
+        Application.Quit();
     }
 
     void Idle() {
@@ -229,6 +230,7 @@ public class NPCBehavior : MonoBehaviour
         {
             convincedNPCs++;
             StartCoroutine("TemporaryText", convincedNPCText);
+            StartCoroutine("TemporaryText", panel);
             dialogueEnabled = false;
         }
     }
@@ -238,6 +240,14 @@ public class NPCBehavior : MonoBehaviour
         if (dialogueEnabled)
         {
             StartCoroutine("TemporaryText", unconvincedNPCText);
+            StartCoroutine("TemporaryText", panel);
+            requiredConvincing--;
+            if (requiredConvincing == convincedNPCs && convincedNPCs == 0 && requiredConvincing == 0)
+            {
+                endGameText.gameObject.SetActive(true);
+                endGameText.text = convincedNPCs.ToString() + "/8 NPCs were convinced";
+                Invoke("EndGame", 5);
+            }
             dialogueEnabled = false;
         }
     }
@@ -253,9 +263,9 @@ public class NPCBehavior : MonoBehaviour
         {
             dialogueCamera.SetActive(false);
             dialogueCanvas.SetActive(false);
-            gameUI.SetActive(false);
-            UnityEngine.Cursor.visible = false;
-            UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+            gameUI.SetActive(true);
+            //UnityEngine.Cursor.visible = false;
+            //UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         }
         
     }

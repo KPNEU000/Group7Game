@@ -39,7 +39,7 @@ public class CameraMovement : MonoBehaviour //Should really be renamed Camera Be
         //Roll
         //roll = moveZ;
         //transform.localRotation = Quaternion.Euler(0, 0, roll);
-        Debug.Log("MOUSE SENSITIVITY" + mouseSensitivity);
+        //Debug.Log("MOUSE SENSITIVITY" + mouseSensitivity);
     }
 
     public void PlayClickSound(AudioClip clickSFX)

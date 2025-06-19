@@ -134,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
         input = transform.right * moveHorizontal + transform.forward * moveVertical;
         input.Normalize();
 
-        Debug.Log(controller.isGrounded);
+        //Debug.Log(controller.isGrounded);
         if (controller.isGrounded)
         {
             moveDirection = input;
@@ -146,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 moveDirection.y = 0.0f; //reset
             }
-            Debug.Log(moveDirection.y);
+            //Debug.Log(moveDirection.y);
         }
         //else //midair
         {
@@ -195,7 +195,7 @@ public class PlayerMovement : MonoBehaviour
         foreach (String c in clueStrings)
         {
             clues.Add(GameObject.Find(c));
-            Debug.Log("ATTEMPTED TO LOAD LIST");
+            //Debug.Log("ATTEMPTED TO LOAD LIST");
         }
     }
 

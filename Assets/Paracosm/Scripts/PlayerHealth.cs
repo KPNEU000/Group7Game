@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -16,6 +17,11 @@ public class PlayerHealth : MonoBehaviour
     private bool isGrounded;
 
     public LevelManager levelManager;
+
+    void Awake()
+    {
+        currentHealth = startingHealth;
+    }
     void Start()
     {
         isGrounded = true;
@@ -73,7 +79,7 @@ public class PlayerHealth : MonoBehaviour
     // Calculates amount of damage to take. For now it is only fall damage
     int CalculateDamage(float distanceFallen)
     {
-        Debug.Log("fell " + distanceFallen);
+        //Debug.Log("fell " + distanceFallen);
 
         if (distanceFallen >= 6)
         {
@@ -99,7 +105,7 @@ public class PlayerHealth : MonoBehaviour
 
         UpdateHealthSlider();
 
-        Debug.Log(damage + " damage taken.");
+        //Debug.Log(damage + " damage taken.");
         if (currentHealth <= 0)
         {
             // player dies
@@ -110,10 +116,12 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Player died.");
-
-        transform.Rotate(-90, 0, 0, Space.Self);
-        levelManager.LevelLost();
+        //Debug.Log("Player died.");
+        if (SceneManager.GetActiveScene().name != "Level 3")
+        {
+            transform.Rotate(-90, 0, 0, Space.Self);
+            levelManager.LevelLost();
+        }
     }
 
     void UpdateHealthSlider()

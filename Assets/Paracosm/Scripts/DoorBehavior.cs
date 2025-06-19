@@ -33,7 +33,7 @@ public class DoorBehavior : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("door");
+            //Debug.Log("door");
             foreach (GameObject key in other.GetComponent<PlayerMovement>().keys)
             {
                 if (key == correctKey)

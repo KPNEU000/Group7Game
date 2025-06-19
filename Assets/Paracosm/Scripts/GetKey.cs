@@ -56,7 +56,7 @@ public class GetKey : MonoBehaviour //Should really be renamed GetCollectable or
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    Debug.Log(objectHitByRaycast.collider.transform.gameObject);
+                    //Debug.Log(objectHitByRaycast.collider.transform.gameObject);
                     //Debug.Log("CLUES" + PlayerMovement.clues);
                     playerMovement.UpdatePlayerAnim(1);
                     playerMovement.clues.Add(objectHitByRaycast.collider.transform.gameObject);

@@ -9,7 +9,7 @@ public class PauseMenuBehavior : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Pause");
+            //Debug.Log("Pause");
             if (isPaused)
             {
                 Resume();

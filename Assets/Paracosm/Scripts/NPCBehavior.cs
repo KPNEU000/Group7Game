@@ -107,7 +107,7 @@ public class NPCBehavior : MonoBehaviour
         //End Game
         if (requiredConvincing == convincedNPCs && requiredConvincing != 0)
         {
-            endGameText.gameObject.SetActive(true);
+            StartCoroutine("TemporaryText", endGameText);
             endGameText.text = convincedNPCs.ToString() + "/8 NPCs were convinced";
             Invoke("EndGame", 5);
         }
@@ -116,6 +116,7 @@ public class NPCBehavior : MonoBehaviour
 
     void EndGame()
     {
+        Debug.Log("GAME ENDED");
         Application.Quit();
     }
 
@@ -220,7 +221,7 @@ public class NPCBehavior : MonoBehaviour
     IEnumerator TemporaryText(GameObject text)
     {
         text.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         text.SetActive(false);
     }
 
@@ -244,7 +245,7 @@ public class NPCBehavior : MonoBehaviour
             requiredConvincing--;
             if (requiredConvincing == convincedNPCs && convincedNPCs == 0 && requiredConvincing == 0)
             {
-                endGameText.gameObject.SetActive(true);
+                StartCoroutine("TemporaryText", endGameText);
                 endGameText.text = convincedNPCs.ToString() + "/8 NPCs were convinced";
                 Invoke("EndGame", 5);
             }

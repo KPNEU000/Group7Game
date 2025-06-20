@@ -177510,7 +177510,7 @@ GameObject:
   - component: {fileID: 1088207385}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: GameUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177620,8 +177620,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4edff5cf13ec1b3459262df44f798081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 625236694}
-  clueHint: {fileID: 794021764}
+  messageText: {fileID: 625236696}
+  clueHint: {fileID: 794021766}
+  timerText: {fileID: 139790463}
 --- !u!1 &1090562289
 GameObject:
   m_ObjectHideFlags: 0
@@ -237539,9 +237540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelTime: 300
-  timerText: {fileID: 139790463}
   messageText: {fileID: 625236696}
-  clueHint: {fileID: 794021766}
   nextLevel: Level 3
   lastClue: {fileID: 500437566}
 --- !u!4 &2088494563

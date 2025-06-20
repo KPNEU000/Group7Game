@@ -12,6 +12,11 @@ public class GameUIBehavior : MonoBehaviour
 
     void Awake()
     {
+        if (Instance != null & Instance != this) //If there is another Instance
+        {
+            Destroy(gameObject); //Destroy this one so there is only one 
+            return;
+        }
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }

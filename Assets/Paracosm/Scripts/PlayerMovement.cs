@@ -11,7 +11,6 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(AudioSource))]
 public class PlayerMovement : MonoBehaviour
 {
-
     public static PlayerMovement Instance;
     public bool canLoadClueList = true;
 
@@ -40,10 +39,21 @@ public class PlayerMovement : MonoBehaviour
     public List<GameObject> clues = new List<GameObject>();
     public int cluesCollected = 0;
     public List<String> clueStrings;
+
+    [Header("Level Locations")] 
+    public Vector3 levelOne = new Vector3(1f, 2.7f, 1.7f);
+    public Vector3 levelTwo;
+    public Vector3 levelThree;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Awake()
     {
+        if (Instance != null & Instance != this) //If there is another Instance
+        {
+            Destroy(gameObject); //Destroy this one so there is only one 
+            return;
+        }
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
@@ -202,6 +212,18 @@ public class PlayerMovement : MonoBehaviour
     public List<GameObject> GetClues()
     {
         return clues;
+    }
+
+    void OnLevelWasLoaded() {
+        string sceneName = SceneManager.GetActiveScene().name;
+        if (sceneName == "Level 1") {
+            transform.position = levelOne;
+        } else if (sceneName == "Level 2") {
+            transform.position = levelTwo;
+        } else if (sceneName == "Level 3") {
+            transform.position = levelThree;
+        }
+        transform.rotation = new Quaternion(0, 90, 0, 0);
     }
 /*
                     void OnCollisionEnter(Collision collision)

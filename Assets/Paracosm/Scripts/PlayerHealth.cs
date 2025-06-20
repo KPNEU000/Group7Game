@@ -31,6 +31,10 @@ public class PlayerHealth : MonoBehaviour
         levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
     }
 
+    void OnLevelWasLoaded() {
+        levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
+    }
+
     void FixedUpdate()
     {
         //Debug.Log("Player is grounded: " + isGrounded);

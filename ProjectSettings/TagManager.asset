@@ -11,6 +11,7 @@ TagManager:
   - Clue
   - LevelManager
   - Deadly
+  - GameUI
   layers:
   - Default
   - TransparentFX

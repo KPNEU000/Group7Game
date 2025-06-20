@@ -1,14 +1,17 @@
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameUIBehavior : MonoBehaviour
 {
     public static GameUIBehavior Instance;
     [SerializeField]
-    GameObject levelText;
+    TMP_Text messageText;
     [SerializeField]
-    GameObject clueHint;
+    TMP_Text clueHint;
+    [SerializeField]
+    TMP_Text timerText;
 
     void Awake()
     {
@@ -24,8 +27,33 @@ public class GameUIBehavior : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Level 3")
         {
-            levelText.SetActive(false);
-            clueHint.SetActive(false);
+            messageText.enabled = false;
+            clueHint.enabled = false;
+        }
+    }
+
+    public void UpdateClueHint(string clueName) {
+        if (clueHint) {
+            clueHint.text = "Find the " + clueName;
+        }
+    }
+
+    public void SetTimerText(string countdown) {
+        if (timerText) {
+            timerText.text = "Time Left: " + countdown;
+        }
+    }
+
+    public void DisplayGameMessage(string message) {
+        if (messageText) {
+            messageText.text = message;
+            messageText.enabled = true;
+        }
+    }
+
+    public void HideGameMessage() {
+        if (messageText) {
+            messageText.enabled = false;
         }
     }
 }

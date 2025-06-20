@@ -81,7 +81,7 @@ public class LevelManager : MonoBehaviour
         //IsPlaying = false;
         DisplayGameMessage("You Failed to Find the Clue");
         
-        Invoke("ReloadSameScene", 5);
+        Invoke("ReloadSameScene", 2);
     }
 
     void DisplayGameMessage(string message) {
@@ -91,7 +91,14 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    void HideGameMessage() {
+        if (messageText) {
+            messageText.enabled = false;
+        }
+    }
+
     void ReloadSameScene() {
+        HideGameMessage();
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }

@@ -8593,11 +8593,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1088207384}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -120, y: -695}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -120, y: 0}
   m_SizeDelta: {x: 60, y: 60}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &80323967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179857,12 +179857,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1852656098234185098, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 551738843}
-    - targetCorrespondingSourceObject: {fileID: 1852656098234185098, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
 --- !u!195 &1149679494 stripped
 NavMeshAgent:
@@ -195494,11 +195488,11 @@ RectTransform:
   - {fileID: 1513647153}
   m_Father: {fileID: 1088207384}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -700}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 50}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1507575574
 MonoBehaviour:
   m_ObjectHideFlags: 0

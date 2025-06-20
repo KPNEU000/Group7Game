@@ -34,7 +34,9 @@ public class LevelManager : MonoBehaviour
             clueName = lastClue.name;
             gameUI.UpdateClueHint(clueName);
         } else {
-            Debug.Log("Warning! No last clue specified!");
+            if (SceneManager.GetActiveScene().name != "Level 2") {
+                Debug.Log("Warning! No last clue specified!");
+            }
         }
     }
 
@@ -48,7 +50,11 @@ public class LevelManager : MonoBehaviour
             if (isFound) {
                 LevelBeat();
             } else if (countdown <= 0) {
-                LevelLost();
+                if (SceneManager.GetActiveScene().name != "Level 2") {
+                    LevelLost();
+                } else {
+                    LevelBeat();
+                }
             }
         }
     }
@@ -95,8 +101,10 @@ public class LevelManager : MonoBehaviour
     }
 
     public void ItemCollected(string item) {
-        if (item == clueName) {
-            isFound = true;
+        if (clueName != null) {
+            if (item == clueName) {
+                isFound = true;
+            }
         }
     }
 }

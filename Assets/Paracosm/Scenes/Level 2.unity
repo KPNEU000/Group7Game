@@ -301,8 +301,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sci-fi_character_unity_green Variant (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 2329777274740910993, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 3986734688049156746, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 2552422639782475859, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 5236820198226627865, guid: e77d76eda990d754094a01553d298620, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6348955029432302845, guid: e77d76eda990d754094a01553d298620, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e77d76eda990d754094a01553d298620, type: 3}
@@ -881,8 +886,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sci-fi_character_unity_green Variant (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 2329777274740910993, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 3986734688049156746, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 2552422639782475859, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 5236820198226627865, guid: e77d76eda990d754094a01553d298620, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6348955029432302845, guid: e77d76eda990d754094a01553d298620, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e77d76eda990d754094a01553d298620, type: 3}
@@ -1421,13 +1431,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 361072136}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 361072135}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 361072134}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 361072133}
@@ -1458,52 +1462,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6, y: 4, z: 6}
   m_Center: {x: 0.0039360523, y: 0.7232663, z: 0.102288924}
---- !u!114 &361072134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361072132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  cameraAnchor: {fileID: 0}
-  clue: {fileID: 0}
-  text1: {fileID: 0}
-  text2: {fileID: 0}
-  text3: {fileID: 0}
-  head: {fileID: 0}
-  maximumX: 0
-  minimumX: 0
-  maximumY: 0
-  minimumY: 0
-  maximumZ: 0
-  minimumZ: 0
-  minQuaternion: {x: 0.0262, y: 0.91192, z: -0.40526, w: 0.05895}
-  maxQuaternion: {x: 0.34818, y: 0.21019, z: -0.08042, w: 0.91001}
-  thirdPersonCamera: {fileID: 0}
-  thirdPersonCameraAnchor: {fileID: 0}
-  dialogueEnabled: 0
-  dialogueAvailable: 0
-  dialogueCanvas: {fileID: 0}
-  gameUI: {fileID: 0}
-  dialogueCamera: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogueUnavailableText: {fileID: 0}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
-  pm: {fileID: 0}
-  endGameText: {fileID: 0}
-  isConvinced: 1
-  panel: {fileID: 0}
-  currentState: 0
-  walkable: 0
-  detectionRange: 20
-  agent: {fileID: 0}
 --- !u!65 &361072135
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1525,28 +1483,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5454116, y: 1.0348986, z: 2.4177184}
   m_Center: {x: -0.09418538, y: 1.3577714, z: 0.439054}
---- !u!95 &361072136
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361072132}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &373680773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6953,8 +6889,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sci-fi_character_unity_green Variant (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 2329777274740910993, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 3986734688049156746, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 2552422639782475859, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 5236820198226627865, guid: e77d76eda990d754094a01553d298620, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6348955029432302845, guid: e77d76eda990d754094a01553d298620, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e77d76eda990d754094a01553d298620, type: 3}
@@ -9503,8 +9444,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sci-fi_character_unity_green Variant (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 2329777274740910993, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 3986734688049156746, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 2552422639782475859, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 5236820198226627865, guid: e77d76eda990d754094a01553d298620, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6348955029432302845, guid: e77d76eda990d754094a01553d298620, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e77d76eda990d754094a01553d298620, type: 3}
@@ -9997,13 +9943,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1069079039}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1069079038}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1069079037}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1069079036}
@@ -10034,52 +9974,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6, y: 4, z: 6}
   m_Center: {x: 0.0039360523, y: 0.7232663, z: 0.102288924}
---- !u!114 &1069079037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069079035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  cameraAnchor: {fileID: 0}
-  clue: {fileID: 0}
-  text1: {fileID: 0}
-  text2: {fileID: 0}
-  text3: {fileID: 0}
-  head: {fileID: 0}
-  maximumX: 0
-  minimumX: 0
-  maximumY: 0
-  minimumY: 0
-  maximumZ: 0
-  minimumZ: 0
-  minQuaternion: {x: 0.0262, y: 0.91192, z: -0.40526, w: 0.05895}
-  maxQuaternion: {x: 0.34818, y: 0.21019, z: -0.08042, w: 0.91001}
-  thirdPersonCamera: {fileID: 0}
-  thirdPersonCameraAnchor: {fileID: 0}
-  dialogueEnabled: 0
-  dialogueAvailable: 0
-  dialogueCanvas: {fileID: 0}
-  gameUI: {fileID: 0}
-  dialogueCamera: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogueUnavailableText: {fileID: 0}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
-  pm: {fileID: 0}
-  endGameText: {fileID: 0}
-  isConvinced: 1
-  panel: {fileID: 0}
-  currentState: 0
-  walkable: 0
-  detectionRange: 20
-  agent: {fileID: 0}
 --- !u!65 &1069079038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10101,28 +9995,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5454116, y: 1.0348986, z: 2.4177184}
   m_Center: {x: -0.09418538, y: 1.3577714, z: 0.439054}
---- !u!95 &1069079039
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069079035}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1122694901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10418,8 +10290,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sci-fi_character_unity_green Variant (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 2329777274740910993, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 3986734688049156746, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 2552422639782475859, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 5236820198226627865, guid: e77d76eda990d754094a01553d298620, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6348955029432302845, guid: e77d76eda990d754094a01553d298620, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e77d76eda990d754094a01553d298620, type: 3}
@@ -10496,8 +10373,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sci-fi_character_unity_green Variant (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 2329777274740910993, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 3986734688049156746, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 2552422639782475859, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 5236820198226627865, guid: e77d76eda990d754094a01553d298620, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6348955029432302845, guid: e77d76eda990d754094a01553d298620, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e77d76eda990d754094a01553d298620, type: 3}
@@ -16160,13 +16042,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1603577823}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1603577822}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1603577821}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1603577820}
@@ -16197,52 +16073,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6, y: 4, z: 6}
   m_Center: {x: 0.0039360523, y: 0.7232663, z: 0.102288924}
---- !u!114 &1603577821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603577819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  cameraAnchor: {fileID: 0}
-  clue: {fileID: 0}
-  text1: {fileID: 0}
-  text2: {fileID: 0}
-  text3: {fileID: 0}
-  head: {fileID: 0}
-  maximumX: 0
-  minimumX: 0
-  maximumY: 0
-  minimumY: 0
-  maximumZ: 0
-  minimumZ: 0
-  minQuaternion: {x: 0.0262, y: 0.91192, z: -0.40526, w: 0.05895}
-  maxQuaternion: {x: 0.34818, y: 0.21019, z: -0.08042, w: 0.91001}
-  thirdPersonCamera: {fileID: 0}
-  thirdPersonCameraAnchor: {fileID: 0}
-  dialogueEnabled: 0
-  dialogueAvailable: 0
-  dialogueCanvas: {fileID: 0}
-  gameUI: {fileID: 0}
-  dialogueCamera: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogueUnavailableText: {fileID: 0}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
-  pm: {fileID: 0}
-  endGameText: {fileID: 0}
-  isConvinced: 1
-  panel: {fileID: 0}
-  currentState: 0
-  walkable: 0
-  detectionRange: 20
-  agent: {fileID: 0}
 --- !u!65 &1603577822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16264,28 +16094,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5454116, y: 1.0348986, z: 2.4177184}
   m_Center: {x: -0.09418538, y: 1.3577714, z: 0.439054}
---- !u!95 &1603577823
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603577819}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1610833995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 67ba160de4f0b924dbdf3247202d3670, type: 3}
@@ -17772,8 +17580,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sci-fi_character_unity_green Variant (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 2329777274740910993, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 3986734688049156746, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 2552422639782475859, guid: e77d76eda990d754094a01553d298620, type: 3}
+    - {fileID: 5236820198226627865, guid: e77d76eda990d754094a01553d298620, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6348955029432302845, guid: e77d76eda990d754094a01553d298620, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e77d76eda990d754094a01553d298620, type: 3}
@@ -18158,13 +17971,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1909178913}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1909178912}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1909178911}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4f0ce77515b2da44d876ab4e0aa7d08b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1909178910}
@@ -18195,52 +18002,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6, y: 4, z: 6}
   m_Center: {x: 0.0039360523, y: 0.7232663, z: 0.102288924}
---- !u!114 &1909178911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909178909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb1242e39c0500e4eae44bfc009f9c60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  cameraAnchor: {fileID: 0}
-  clue: {fileID: 0}
-  text1: {fileID: 0}
-  text2: {fileID: 0}
-  text3: {fileID: 0}
-  head: {fileID: 0}
-  maximumX: 0
-  minimumX: 0
-  maximumY: 0
-  minimumY: 0
-  maximumZ: 0
-  minimumZ: 0
-  minQuaternion: {x: 0.0262, y: 0.91192, z: -0.40526, w: 0.05895}
-  maxQuaternion: {x: 0.34818, y: 0.21019, z: -0.08042, w: 0.91001}
-  thirdPersonCamera: {fileID: 0}
-  thirdPersonCameraAnchor: {fileID: 0}
-  dialogueEnabled: 0
-  dialogueAvailable: 0
-  dialogueCanvas: {fileID: 0}
-  gameUI: {fileID: 0}
-  dialogueCamera: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogueUnavailableText: {fileID: 0}
-  convincedNPCText: {fileID: 0}
-  unconvincedNPCText: {fileID: 0}
-  pm: {fileID: 0}
-  endGameText: {fileID: 0}
-  isConvinced: 1
-  panel: {fileID: 0}
-  currentState: 0
-  walkable: 0
-  detectionRange: 20
-  agent: {fileID: 0}
 --- !u!65 &1909178912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18262,28 +18023,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5454116, y: 1.0348986, z: 2.4177184}
   m_Center: {x: -0.09418538, y: 1.3577714, z: 0.439054}
---- !u!95 &1909178913
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909178909}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1916749406
 GameObject:
   m_ObjectHideFlags: 0

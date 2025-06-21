@@ -52,7 +52,7 @@ public class PlayerHealth : MonoBehaviour
             fallDistance = previousPosition.y - player.transform.position.y;
         }
 
-        if (lastFallDistance > 0)
+        if (fallDistance > 0)
             TakeDamage(CalculateDamage(lastFallDistance));
         
     }
@@ -61,8 +61,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = true;
             lastFallDistance = fallDistance;
+            isGrounded = true;
 
         }
         else if (collision.gameObject.CompareTag("Deadly")) //Die when you hit the water

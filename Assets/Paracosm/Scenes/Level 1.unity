@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 23697327}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8904,7 +8904,7 @@ GameObject:
   - component: {fileID: 91269570}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11341,6 +11341,10 @@ PrefabInstance:
       value: Data Caps (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1303781000943784, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303781000943784, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11426,7 +11430,7 @@ GameObject:
   - component: {fileID: 109833010}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -21605,7 +21609,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.1
   m_Height: 0.1
@@ -21660,7 +21664,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &143085765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23065,14 +23069,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Data Caps (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1303781000943784, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 1802179045238576, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 4684311418634222, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.031242
@@ -23527,22 +23523,6 @@ PrefabInstance:
     - target: {fileID: 4708965725589232951, guid: f1ed58764d968b047b58d640e9cf1417, type: 3}
       propertyPath: m_Name
       value: Ring (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4708965725589232951, guid: f1ed58764d968b047b58d640e9cf1417, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5337411849267447693, guid: f1ed58764d968b047b58d640e9cf1417, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.0235476
-      objectReference: {fileID: 0}
-    - target: {fileID: 5337411849267447693, guid: f1ed58764d968b047b58d640e9cf1417, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.4259
-      objectReference: {fileID: 0}
-    - target: {fileID: 5337411849267447693, guid: f1ed58764d968b047b58d640e9cf1417, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.1822002
       objectReference: {fileID: 0}
     - target: {fileID: 5337411849267447693, guid: f1ed58764d968b047b58d640e9cf1417, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24086,6 +24066,10 @@ PrefabInstance:
     - target: {fileID: 1303781000943784, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
       propertyPath: m_Name
       value: Data Caps (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303781000943784, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1303781000943784, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25223,22 +25207,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trash_Can (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 8286722520439192134, guid: 38042f519a42241499542a4d5063d80c, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668174287568478460, guid: 38042f519a42241499542a4d5063d80c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.4213002
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668174287568478460, guid: 38042f519a42241499542a4d5063d80c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.4212997
-      objectReference: {fileID: 0}
-    - target: {fileID: 8668174287568478460, guid: 38042f519a42241499542a4d5063d80c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.4213
-      objectReference: {fileID: 0}
     - target: {fileID: 8668174287568478460, guid: 38042f519a42241499542a4d5063d80c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.85915
@@ -25947,6 +25915,10 @@ PrefabInstance:
       value: Geo_base
       objectReference: {fileID: 0}
     - target: {fileID: 1334102657782902, guid: fa2bc414ff40df84e980e1f63c2491f4, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1334102657782902, guid: fa2bc414ff40df84e980e1f63c2491f4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -26021,7 +25993,7 @@ GameObject:
   - component: {fileID: 246514109}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -28077,14 +28049,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Data Caps
       objectReference: {fileID: 0}
-    - target: {fileID: 1303781000943784, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 1802179045238576, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 4684311418634222, guid: 5ee38cac5d0088a43bd714d0fc62eb84, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.719151
@@ -29184,6 +29148,10 @@ PrefabInstance:
       value: Geo_base (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1334102657782902, guid: fa2bc414ff40df84e980e1f63c2491f4, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1334102657782902, guid: fa2bc414ff40df84e980e1f63c2491f4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -29557,7 +29525,7 @@ GameObject:
   - component: {fileID: 336405272}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -30872,7 +30840,7 @@ GameObject:
   - component: {fileID: 388501931}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -33000,22 +32968,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Trash_Can2
       objectReference: {fileID: 0}
-    - target: {fileID: 2344250488722534711, guid: 10d9f9be301dd33428a3aaca407199e3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3153544255128464269, guid: 10d9f9be301dd33428a3aaca407199e3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3153544255128464269, guid: 10d9f9be301dd33428a3aaca407199e3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3153544255128464269, guid: 10d9f9be301dd33428a3aaca407199e3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.74148
-      objectReference: {fileID: 0}
     - target: {fileID: 3153544255128464269, guid: 10d9f9be301dd33428a3aaca407199e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.757835
@@ -33229,10 +33181,6 @@ PrefabInstance:
     - target: {fileID: 4057332214047127339, guid: 02faec155a85efb468ab0ff9d5424a0d, type: 3}
       propertyPath: m_Name
       value: Oxy_ballon (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4057332214047127339, guid: 02faec155a85efb468ab0ff9d5424a0d, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4057332214047127340, guid: 02faec155a85efb468ab0ff9d5424a0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34894,22 +34842,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Container_small (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1181796843363928, guid: 767a1075f1ec4394d88256559f7c8d1c, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 4861587243735292, guid: 767a1075f1ec4394d88256559f7c8d1c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4861587243735292, guid: 767a1075f1ec4394d88256559f7c8d1c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4861587243735292, guid: 767a1075f1ec4394d88256559f7c8d1c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.16
-      objectReference: {fileID: 0}
     - target: {fileID: 4861587243735292, guid: 767a1075f1ec4394d88256559f7c8d1c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.08
@@ -34949,10 +34881,6 @@ PrefabInstance:
     - target: {fileID: 4861587243735292, guid: 767a1075f1ec4394d88256559f7c8d1c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4861587243735292, guid: 767a1075f1ec4394d88256559f7c8d1c, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39732,7 +39660,7 @@ GameObject:
   - component: {fileID: 550223309}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -40943,7 +40871,7 @@ GameObject:
   - component: {fileID: 563864773}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -141432,18 +141360,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1329326954}
     m_Modifications:
     - target: {fileID: 228839175094743653, guid: 1192f8ea43fcc2746be314c79250f1b3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 228839175094743653, guid: 1192f8ea43fcc2746be314c79250f1b3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 228839175094743653, guid: 1192f8ea43fcc2746be314c79250f1b3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 228839175094743653, guid: 1192f8ea43fcc2746be314c79250f1b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.599998
       objectReference: {fileID: 0}
@@ -141483,17 +141399,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 228839175094743653, guid: 1192f8ea43fcc2746be314c79250f1b3, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 605400624003508447, guid: 1192f8ea43fcc2746be314c79250f1b3, type: 3}
       propertyPath: m_Name
       value: SM_Barrel_01 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 605400624003508447, guid: 1192f8ea43fcc2746be314c79250f1b3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -143763,7 +143671,7 @@ GameObject:
   - component: {fileID: 666512642}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -144948,6 +144856,10 @@ PrefabInstance:
     - target: {fileID: 4057332214047127339, guid: 02faec155a85efb468ab0ff9d5424a0d, type: 3}
       propertyPath: m_Name
       value: Oxy_ballon (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057332214047127339, guid: 02faec155a85efb468ab0ff9d5424a0d, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4057332214047127339, guid: 02faec155a85efb468ab0ff9d5424a0d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -148951,7 +148863,7 @@ GameObject:
   - component: {fileID: 777115591}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -151262,7 +151174,7 @@ GameObject:
   - component: {fileID: 795279038}
   m_Layer: 0
   m_Name: Stairs (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -164976,7 +164888,7 @@ GameObject:
   - component: {fileID: 947375910}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -166843,7 +166755,7 @@ GameObject:
   - component: {fileID: 1028230060}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -177979,10 +177891,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Container_BigOpen (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1100902888585880, guid: 2791da188b845cc409e8b00443c20d21, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 4033235075011794, guid: 2791da188b845cc409e8b00443c20d21, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.238959
@@ -179885,7 +179793,7 @@ GameObject:
   - component: {fileID: 1153364061}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -186527,10 +186435,6 @@ PrefabInstance:
     - target: {fileID: 8887532909283761479, guid: 382163bfbf5b3da499baf8ccf9c43380, type: 3}
       propertyPath: m_Name
       value: SM_Barrel_02 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887532909283761479, guid: 382163bfbf5b3da499baf8ccf9c43380, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -198952,7 +198856,7 @@ GameObject:
   - component: {fileID: 1558030114}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -201878,7 +201782,7 @@ GameObject:
   - component: {fileID: 1578676550}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -206383,7 +206287,7 @@ GameObject:
   - component: {fileID: 1688151721}
   m_Layer: 0
   m_Name: Stairs (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -236165,6 +236069,10 @@ PrefabInstance:
       value: SM_Trash_Can1
       objectReference: {fileID: 0}
     - target: {fileID: 8201703563593344366, guid: 8cbc8d154037d9b46a6e219fe16aca4b, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201703563593344366, guid: 8cbc8d154037d9b46a6e219fe16aca4b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -236649,6 +236557,10 @@ PrefabInstance:
     - target: {fileID: 3018615472388120121, guid: 53368f05f5d004e45a85d59eb8d7b70d, type: 3}
       propertyPath: m_Name
       value: Geo_ant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018615472388120121, guid: 53368f05f5d004e45a85d59eb8d7b70d, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 3018615472388120121, guid: 53368f05f5d004e45a85d59eb8d7b70d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -238459,6 +238371,10 @@ PrefabInstance:
     - target: {fileID: 1078601217194440, guid: eb78f0b05c9799b48a3da95f40152af7, type: 3}
       propertyPath: m_Name
       value: Supply_box
+      objectReference: {fileID: 0}
+    - target: {fileID: 1078601217194440, guid: eb78f0b05c9799b48a3da95f40152af7, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1078601217194440, guid: eb78f0b05c9799b48a3da95f40152af7, type: 3}
       propertyPath: m_StaticEditorFlags

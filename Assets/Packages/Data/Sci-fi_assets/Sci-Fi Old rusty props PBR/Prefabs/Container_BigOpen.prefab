@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 64153048430494190}
   m_Layer: 0
   m_Name: Container_BigOpen
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4033235075011794
 Transform:

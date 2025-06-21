@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 65574636664212382}
   m_Layer: 26
   m_Name: Data Caps
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4684311418634222
 Transform:

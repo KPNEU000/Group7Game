@@ -2656,7 +2656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 105eb61b35a2b144295f49fae039b4c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelTime: 10
+  levelTime: 150
   messageText: {fileID: 0}
   nextLevel: Level 3
   lastClue: {fileID: 0}

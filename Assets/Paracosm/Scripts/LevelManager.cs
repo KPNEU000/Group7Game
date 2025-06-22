@@ -34,7 +34,7 @@ public class LevelManager : MonoBehaviour
             clueName = lastClue.name;
             gameUI.UpdateClueHint(clueName);
         } else {
-            if (SceneManager.GetActiveScene().name != "Level 2") {
+            if (SceneManager.GetActiveScene().name == "Level 1") {
                 Debug.Log("Warning! No last clue specified!");
             }
         }

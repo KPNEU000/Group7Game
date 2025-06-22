@@ -62,20 +62,37 @@ public class NPCBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // Find the player GameObject
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            target = playerObject.transform;
+        }
+        else
+        {
+            Debug.LogWarning("Player not found in the scene!");
+        }
 
 
         if (!cameraAnchor)
-            {
+        {
                 cameraAnchor = GameObject.FindGameObjectWithTag("CameraAnchor");
-            }
+        }
+
         thirdPersonCameraAnchor = cameraAnchor.GetComponent<ThirdPersonCamera>();
-        if (walkable) {
+        
+        if (walkable)
+        {
             agent.SetDestination(target.position);
-            if (!agent) {
+            if (!agent)
+            {
                 walkable = false;
             }
-        } else {
-            if (agent) {
+        }
+        else
+        {
+            if (agent)
+            {
                 agent.enabled = false;
             }
         }

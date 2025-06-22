@@ -178698,7 +178698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1245828716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178712,9 +178712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelTime: 900
-  timerText: {fileID: 0}
   messageText: {fileID: 0}
-  clueHint: {fileID: 0}
   nextLevel: Level 3
   lastClue: {fileID: 0}
 --- !u!4 &1245828717
@@ -181545,7 +181543,7 @@ PrefabInstance:
       objectReference: {fileID: 1303308890}
     - target: {fileID: 1247542052405181171, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_IsActive
@@ -196315,7 +196313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1247542052405181171, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1505873172495936997, guid: e96c3e83a22969247bca2b3b24c8a6e8, type: 3}
       propertyPath: m_IsActive

@@ -64,7 +64,8 @@ public class NPCBehavior : MonoBehaviour
     {
         // Find the player GameObject
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-        if (playerObject != null)
+
+        if (playerObject != null && SceneManager.GetActiveScene().name != "Level 2")
         {
             target = playerObject.transform;
         }
